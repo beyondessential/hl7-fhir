@@ -1,0 +1,40 @@
+{
+    "resourceType": "DiagnosticReport",
+    "code": [{
+        "system": "http://loinc.org",
+        "value": "18723-7"
+    }],
+    "basedOn": [
+        {
+            "identifier": {
+                "value": "6996823",
+                "system": "http://data-dictionary.tamanu-fiji.org/tamanu-mrid-labrequest.html",
+                "type": "ServiceRequest"
+            },
+            "id": "00a2c05b-f980-48a8-aec0-3d4fe078a824"
+        }
+    ],
+    "status": "final",
+    "result": [
+        {
+            "type": "Observation",
+            "id": "myObservation1"
+        },
+        {
+            "type": "Observation",
+            "id": "myObservation2"
+        },
+        {
+            "type": "Observation",
+            "id": "myObservation3"
+        },
+        {
+            "type": "Observation",
+            "id": "myObservation4"
+        }
+    ],
+    "presentedForm": [{
+        "contentType": "application/rtf",
+        "data": "<in base64 RTF Results>"
+    }]
+}
