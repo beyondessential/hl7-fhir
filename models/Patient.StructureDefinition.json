@@ -1,0 +1,76 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://data-dictionary.tamanu-fiji.org/fhir/Patient",
+  "name": "Patient",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Patient",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Patient",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Patient.name.suffix",
+        "path": "Patient.name.suffix",
+        "max": "0"
+      },
+      {
+        "id": "Patient.name.period",
+        "path": "Patient.name.period",
+        "max": "0"
+      },
+      {
+        "id": "Patient.telecom.period",
+        "path": "Patient.telecom.period",
+        "max": "0"
+      },
+      {
+        "id": "Patient.maritalStatus",
+        "path": "Patient.maritalStatus",
+        "max": "0"
+      },
+      {
+        "id": "Patient.multipleBirth[x]",
+        "path": "Patient.multipleBirth[x]",
+        "max": "0"
+      },
+      {
+        "id": "Patient.photo",
+        "path": "Patient.photo",
+        "max": "0"
+      },
+      {
+        "id": "Patient.contact",
+        "path": "Patient.contact",
+        "max": "0"
+      },
+      {
+        "id": "Patient.communication",
+        "path": "Patient.communication",
+        "max": "0"
+      },
+      {
+        "id": "Patient.generalPractitioner",
+        "path": "Patient.generalPractitioner",
+        "max": "0"
+      },
+      {
+        "id": "Patient.managingOrganization",
+        "path": "Patient.managingOrganization",
+        "max": "0"
+      },
+      {
+        "id": "Patient.link.other.type",
+        "path": "Patient.link.other.type",
+        "fixedUri": "Patient"
+      },
+      {
+        "id": "Patient.link.type",
+        "path": "Patient.link.type",
+        "short": "replaced-by | replaces"
+      }
+    ]
+  }
+}

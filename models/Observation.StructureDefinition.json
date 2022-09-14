@@ -76,6 +76,11 @@
         ]
       },
       {
+        "id": "Observation.interpretation",
+        "path": "Observation.interpretation",
+        "max": "0"
+      },
+      {
         "id": "Observation.bodySite",
         "path": "Observation.bodySite",
         "max": "0"
