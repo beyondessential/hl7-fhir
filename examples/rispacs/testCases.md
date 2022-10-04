@@ -7,8 +7,8 @@ Here is an inventory of files:
 
 
 The flow is this:
-- Jane-----merged into----> Johnothan
-- Johnothan--merged into--> John
+- Jane      --merged into--> Johnothan
+- Johnothan --merged into--> John
 
 
 
