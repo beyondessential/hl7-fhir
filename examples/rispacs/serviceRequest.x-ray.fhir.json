@@ -1,0 +1,66 @@
+{
+    "resourceType": "ServiceRequest",
+    "id": "00a2c05b-f980-48a8-aec0-3d4fe0122f324",
+    "identifier": [
+        {
+            "system": "http://data-dictionary.tamanu-fiji.org/tamanu-mrid-imagingrequest.html",
+            "value": "VTBZWN"
+        }
+    ],
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "363679005"
+                }
+            ]
+        }
+    ],
+    "subject": {
+        "reference": "Patient/592a0273-ad6b-4d1e-acbf-0076a8011be8",
+        "display": "Ryan Ashwood"
+    },
+    "status": "active",
+    "contained": [
+        {
+            "collection": {
+                "collectedDateTime": "2022-02-07T13:28:17+10:00"
+            },
+            "resourceType": "Specimen"
+        }
+    ],
+    "priority": "urgent",
+    "code": {
+        "text": "X-ray"
+    },
+    "orderDetail": [
+        {
+            "coding": [
+                {
+                    "system": "http://data-dictionary.tamanu-fiji.org/rispacs-billing-code.html",
+                    "code": "2LHA",
+                    "display": "HAND (LEFT) DIGITISED"
+                }
+            ]
+        },
+        {
+            "coding": [
+                {
+                    "system": "http://data-dictionary.tamanu-fiji.org/rispacs-billing-code.html",
+                    "code": "2LEL",
+                    "display": "ELBOW (LEFT) DIGITISED"
+                }
+            ]
+        },
+        {
+            "coding": [
+                {
+                    "system": "http://data-dictionary.tamanu-fiji.org/rispacs-billing-code.html",
+                    "code": "2LFR",
+                    "display": "FOREARM (LEFT) DIGITISED"
+                }
+            ]
+        }
+    ]
+}

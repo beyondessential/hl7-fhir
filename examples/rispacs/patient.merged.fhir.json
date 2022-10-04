@@ -1,0 +1,60 @@
+{
+    "resourceType": "Patient",
+    "id": "dc8ea9a6-d33a-4419-93da-7b8a91ffb9b0",
+    "active": false,
+    "identifier": [
+        {
+            "use": "usual",
+            "value": "QLKE835509",
+            "assigner": "VRS",
+            "system": "http://data-dictionary.tamanu-fiji.org/application-reference-number.html"
+        },
+        {
+            "use": "secondary",
+            "assigner": "RTA",
+            "value": "656985"
+        }
+    ],
+    "name": [
+        {
+            "use": "official",
+            "prefix": [
+                "Mr"
+            ],
+            "family": "Purcey",
+            "given": [
+                "Johnothan"
+            ]
+        }
+    ],
+    "birthDate": "1980-04-27",
+    "gender": "male",
+    "address": [
+        {
+            "type": "physical",
+            "use": "home",
+            "city": "Suva",
+            "line": []
+        }
+    ],
+    "telecom": [
+        {
+            "rank": 1,
+            "value": "9639954"
+        }
+    ],
+    "link": [
+        {
+            "other": {
+                "reference": "Patient/2472f1e5-2965-4272-babf-86bc60800cac"
+            },
+            "type": "replaced-by"
+        },
+        {
+            "other": {
+                "reference": "Patient/998ea9a6-d33a-4419-93da-7b8a91ffb9b0"
+            },
+            "type": "seealso"
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "resourceType": "Patient",
+    "id": "592a0273-ad6b-4d1e-acbf-0076a8011be8",
+    "active": true,
+    "identifier": [
+        {
+            "use": "usual",
+            "value": "UTOE353558",
+            "assigner": "VRS",
+            "system": "http://data-dictionary.tamanu-fiji.org/application-reference-number.html"
+        }
+    ],
+    "name": [
+        {
+            "use": "official",
+            "prefix": [
+                "Mr"
+            ],
+            "family": "Ashwood",
+            "given": [
+                "Ryan"
+            ]
+        }
+    ],
+    "birthDate": "1968-10-28",
+    "gender": "male",
+    "address": [
+        {
+            "type": "physical",
+            "use": "home",
+            "city": "Lautoka",
+            "line": []
+        }
+    ],
+    "telecom": [
+        {
+            "rank": 1,
+            "value": "7018569"
+        }
+    ]
+}

@@ -1,0 +1,660 @@
+{
+	"resourceType": "Bundle",
+	"type": "transaction",
+	"entry": [{
+		"request": {
+			"method": "PUT",
+			"url": "Patient/15e01c26-664b-42c0-ae17-52ee0b4e3691"
+		},
+		"fullUrl": "Patient/15e01c26-664b-42c0-ae17-52ee0b4e3691",
+		"resource": {
+			"resourceType": "Patient",
+			"address": [{
+				"city": "Namaka",
+				"country": "Fiji",
+				"line": ["100 Votualevu Street"],
+				"state": "Nadi"
+			}, {
+				"city": "Nakasi",
+				"country": "Fiji",
+				"line": ["Lot 34 Kabi Place"]
+			}],
+			"birthDate": "1960-10-25",
+			"deceasedBoolean": false,
+			"extension": [{
+				"extension": [{
+					"url": "ombCategory",
+					"valueCoding": {
+						"code": "A",
+						"display": "A (White British)"
+					}
+				}, {
+					"url": "text",
+					"valueString": "A (White British)"
+				}],
+				"url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
+			}, {
+				"url": "http://hl7.org/fhir/StructureDefinition/patient-religion",
+				"valueCodeableConcept": {
+					"coding": [{
+						"code": "A",
+						"display": "Athiest"
+					}]
+				}
+			}],
+			"gender": "male",
+			"identifier": [{
+				"type": {
+					"coding": [{
+						"code": "MR",
+						"system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+					}],
+					"text": "MRN"
+				},
+				"value": "ABCD123456"
+			}],
+			"multipleBirthBoolean": false,
+			"name": [{
+				"family": "Fiji",
+				"given": ["Test"],
+				"text": "Test Fiji"
+			}, {
+				"family": "Iss",
+				"given": ["Tester"],
+				"prefix": ["Mr"],
+				"text": "Mr Tester Iss",
+				"use": "official"
+			}],
+			"telecom": [{
+				"system": "phone",
+				"use": "home",
+				"value": "+6796720316"
+			}],
+			"id": "15e01c26-664b-42c0-ae17-52ee0b4e3691"
+		}
+	}, {
+		"request": {
+			"method": "PUT",
+			"url": "Organization/AE"
+		},
+		"fullUrl": "Organization/AE",
+		"resource": {
+			"resourceType": "Organization",
+			"identifier": [{
+				"extension": [{
+					"url": "http://intersystems.com/fhir/extn/sda3/lib/code-table-detail-organization-s-d-a-coding-standard",
+					"valueString": "ISS"
+				}],
+				"value": "AE"
+			}],
+			"name": "Accident and Emergency",
+			"id": "AE"
+		}
+	}, {
+		"request": {
+			"method": "PUT",
+			"url": "Practitioner/0f9e3c7d-ebb0-42ee-a3ca-dfd23417247a"
+		},
+		"fullUrl": "Practitioner/0f9e3c7d-ebb0-42ee-a3ca-dfd23417247a",
+		"resource": {
+			"resourceType": "Practitioner",
+			"extension": [{
+				"url": "http://intersystems.com/fhir/extn/sda3/lib/code-table-detail-care-provider-description",
+				"valueString": "Williams, Jeannette"
+			}],
+			"identifier": [{
+				"extension": [{
+					"url": "http://intersystems.com/fhir/extn/sda3/lib/code-table-detail-care-provider-s-d-a-coding-standard",
+					"valueString": "NI"
+				}],
+				"value": "G1234569"
+			}],
+			"name": [{
+				"family": "Williams",
+				"given": ["Jeannette"],
+				"prefix": ["Mr"],
+				"text": "Mr Jeannette Williams"
+			}],
+			"id": "0f9e3c7d-ebb0-42ee-a3ca-dfd23417247a"
+		}
+	}, {
+		"request": {
+			"method": "POST",
+			"url": "ServiceRequest"
+		},
+		"fullUrl": "urn:uuid:ec997903-1168-4d97-aa0f-37f6f1e0d66d",
+		"resource": {
+			"resourceType": "ServiceRequest",
+			"category": [{
+				"coding": [{
+					"code": "103693007",
+					"display": "Diagnostic procedure",
+					"system": "http://snomed.info/sct"
+				}],
+				"text": "Diagnostic procedure"
+			}],
+			"code": {
+				"coding": [{
+					"code": "55231-5",
+					"display": "Lytes Pnl Bld",
+					"system": "http://loinc.org"
+				}],
+				"extension": [{
+					"url": "http://intersystems.com/fhir/extn/sda3/lib/code-table-translated-prior-codes",
+					"valueCodeableConcept": {
+						"coding": [{
+							"code": "C005",
+							"display": "ELECTROLYTES",
+							"extension": [{
+								"url": "http://intersystems.com/fhir/extn/sda3/lib/prior-code-code-system",
+								"valueString": "L"
+							}]
+						}],
+						"text": "A"
+					}
+				}]
+			},
+			"extension": [{
+				"url": "http://intersystems.com/fhir/extn/sda3/lib/lab-order-callback-number",
+				"valueString": "95224890"
+			}, {
+				"url": "http://intersystems.com/fhir/extn/sda3/lib/lab-order-entered-at",
+				"valueReference": {
+					"reference": "Organization/AE"
+				}
+			}, {
+				"url": "http://intersystems.com/fhir/extn/sda3/lib/lab-order-specimen",
+				"valueString": "Serum"
+			}, {
+				"url": "http://intersystems.com/fhir/extn/sda3/lib/lab-order-specimen-collected-time",
+				"valueDateTime": "2022-09-21T09:00:00+10:00"
+			}, {
+				"url": "http://intersystems.com/fhir/extn/sda3/lib/lab-order-specimen-received-time",
+				"valueDateTime": "2022-09-21T15:06:00+10:00"
+			}],
+			"identifier": [{
+				"type": {
+					"coding": [{
+						"code": "FILL",
+						"display": "Filler Identifier",
+						"system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+					}],
+					"text": "FillerId"
+				},
+				"use": "official",
+				"value": "22B000011"
+			}, {
+				"type": {
+					"coding": [{
+						"code": "PLAC",
+						"display": "Placer Identifier",
+						"system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+					}],
+					"text": "PlacerId"
+				},
+				"use": "official"
+			}],
+			"intent": "order",
+			"priority": "routine",
+			"requester": {
+				"reference": "urn:uuid:0f9e3c7d-ebb0-42ee-a3ca-dfd23417247a"
+			},
+			"status": "active",
+			"subject": {
+				"reference": "urn:uuid:15e01c26-664b-42c0-ae17-52ee0b4e3691"
+			}
+		}
+	}, {
+		"request": {
+			"method": "POST",
+			"url": "Observation"
+		},
+		"fullUrl": "urn:uuid:f92498b4-7ad9-4c52-9915-0034b644942a",
+		"resource": {
+			"resourceType": "Observation",
+			"category": [{
+				"coding": [{
+					"code": "laboratory",
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category"
+				}]
+			}],
+			"code": {
+				"coding": [{
+					"code": "2947-0",
+					"display": "Sodium Bld-sCnc",
+					"system": "http://loinc.org"
+				}],
+				"extension": [{
+					"url": "http://intersystems.com/fhir/extn/sda3/lib/code-table-detail-lab-test-item-is-numeric",
+					"valueBoolean": true
+				}, {
+					"url": "http://intersystems.com/fhir/extn/sda3/lib/code-table-detail-lab-test-item-prior-codes",
+					"valueCodeableConcept": {
+						"coding": [{
+							"code": "C1095",
+							"display": "Sodium",
+							"extension": [{
+								"url": "http://intersystems.com/fhir/extn/sda3/lib/prior-code-code-system",
+								"valueString": "L"
+							}]
+						}],
+						"text": "A"
+					}
+				}]
+			},
+			"effectiveDateTime": "2022-09-21T09:00:00+10:00",
+			"extension": [{
+				"url": "http://intersystems.com/fhir/extn/sda3/lib/lab-result-item-observation-value-type",
+				"valueString": "NM"
+			}, {
+				"url": "http://intersystems.com/fhir/extn/sda3/lib/lab-result-item-sub-id",
+				"valueString": "1"
+			}],
+			"interpretation": [{
+				"coding": [{
+					"display": "N"
+				}],
+				"text": "N"
+			}],
+			"referenceRange": [{
+				"high": {
+					"value": 144
+				},
+				"low": {
+					"value": 134
+				},
+				"text": "134-144"
+			}],
+			"status": "final",
+			"subject": {
+				"reference": "urn:uuid:15e01c26-664b-42c0-ae17-52ee0b4e3691"
+			},
+			"valueQuantity": {
+				"code": "mmol/L",
+				"system": "http://unitsofmeasure.org",
+				"unit": "mmol/L",
+				"value": 139
+			}
+		}
+	}, {
+		"request": {
+			"method": "POST",
+			"url": "Observation"
+		},
+		"fullUrl": "urn:uuid:f131d0a1-1485-4279-92ac-0879a39650b5",
+		"resource": {
+			"resourceType": "Observation",
+			"category": [{
+				"coding": [{
+					"code": "laboratory",
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category"
+				}]
+			}],
+			"code": {
+				"coding": [{
+					"code": "6298-4",
+					"display": "Potassium Bld-sCnc",
+					"system": "http://loinc.org"
+				}],
+				"extension": [{
+					"url": "http://intersystems.com/fhir/extn/sda3/lib/code-table-detail-lab-test-item-is-numeric",
+					"valueBoolean": true
+				}, {
+					"url": "http://intersystems.com/fhir/extn/sda3/lib/code-table-detail-lab-test-item-prior-codes",
+					"valueCodeableConcept": {
+						"coding": [{
+							"code": "C1100",
+							"display": "Potassium",
+							"extension": [{
+								"url": "http://intersystems.com/fhir/extn/sda3/lib/prior-code-code-system",
+								"valueString": "L"
+							}]
+						}],
+						"text": "A"
+					}
+				}]
+			},
+			"effectiveDateTime": "2022-09-21T09:00:00+10:00",
+			"extension": [{
+				"url": "http://intersystems.com/fhir/extn/sda3/lib/lab-result-item-observation-value-type",
+				"valueString": "NM"
+			}, {
+				"url": "http://intersystems.com/fhir/extn/sda3/lib/lab-result-item-sub-id",
+				"valueString": "2"
+			}],
+			"interpretation": [{
+				"coding": [{
+					"display": "N"
+				}],
+				"text": "N"
+			}],
+			"referenceRange": [{
+				"high": {
+					"value": 5.6
+				},
+				"low": {
+					"value": 3.5
+				},
+				"text": "3.5-5.6"
+			}],
+			"status": "final",
+			"subject": {
+				"reference": "urn:uuid:15e01c26-664b-42c0-ae17-52ee0b4e3691"
+			},
+			"valueQuantity": {
+				"code": "mmol/L",
+				"system": "http://unitsofmeasure.org",
+				"unit": "mmol/L",
+				"value": 4.7
+			}
+		}
+	}, {
+		"request": {
+			"method": "POST",
+			"url": "Observation"
+		},
+		"fullUrl": "urn:uuid:02f33e62-eaf9-487f-9fbf-9ff232d198e3",
+		"resource": {
+			"resourceType": "Observation",
+			"category": [{
+				"coding": [{
+					"code": "laboratory",
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category"
+				}]
+			}],
+			"code": {
+				"coding": [{
+					"code": "2069-3",
+					"display": "Chloride Bld-sCnc",
+					"system": "http://loinc.org"
+				}],
+				"extension": [{
+					"url": "http://intersystems.com/fhir/extn/sda3/lib/code-table-detail-lab-test-item-is-numeric",
+					"valueBoolean": true
+				}, {
+					"url": "http://intersystems.com/fhir/extn/sda3/lib/code-table-detail-lab-test-item-prior-codes",
+					"valueCodeableConcept": {
+						"coding": [{
+							"code": "C1105",
+							"display": "Chloride",
+							"extension": [{
+								"url": "http://intersystems.com/fhir/extn/sda3/lib/prior-code-code-system",
+								"valueString": "L"
+							}]
+						}],
+						"text": "A"
+					}
+				}]
+			},
+			"effectiveDateTime": "2022-09-21T09:00:00+10:00",
+			"extension": [{
+				"url": "http://intersystems.com/fhir/extn/sda3/lib/lab-result-item-observation-value-type",
+				"valueString": "NM"
+			}, {
+				"url": "http://intersystems.com/fhir/extn/sda3/lib/lab-result-item-sub-id",
+				"valueString": "3"
+			}],
+			"interpretation": [{
+				"coding": [{
+					"display": "N"
+				}],
+				"text": "N"
+			}],
+			"referenceRange": [{
+				"high": {
+					"value": 105
+				},
+				"low": {
+					"value": 85
+				},
+				"text": "85-105"
+			}],
+			"status": "final",
+			"subject": {
+				"reference": "urn:uuid:15e01c26-664b-42c0-ae17-52ee0b4e3691"
+			},
+			"valueQuantity": {
+				"code": "mmol/L",
+				"system": "http://unitsofmeasure.org",
+				"unit": "mmol/L",
+				"value": 97
+			}
+		}
+	}, {
+		"request": {
+			"method": "POST",
+			"url": "Observation"
+		},
+		"fullUrl": "urn:uuid:92755cb4-f08f-44d7-9bd4-658b9ed681f8",
+		"resource": {
+			"resourceType": "Observation",
+			"category": [{
+				"coding": [{
+					"code": "laboratory",
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category"
+				}]
+			}],
+			"code": {
+				"coding": [{
+					"code": "20565-8",
+					"display": "CO2 Bld-sCnc",
+					"system": "http://loinc.org"
+				}],
+				"extension": [{
+					"url": "http://intersystems.com/fhir/extn/sda3/lib/code-table-detail-lab-test-item-is-numeric",
+					"valueBoolean": true
+				}, {
+					"url": "http://intersystems.com/fhir/extn/sda3/lib/code-table-detail-lab-test-item-prior-codes",
+					"valueCodeableConcept": {
+						"coding": [{
+							"code": "C1110",
+							"display": "Bicarbonate",
+							"extension": [{
+								"url": "http://intersystems.com/fhir/extn/sda3/lib/prior-code-code-system",
+								"valueString": "L"
+							}]
+						}],
+						"text": "A"
+					}
+				}]
+			},
+			"effectiveDateTime": "2022-09-21T09:00:00+10:00",
+			"extension": [{
+				"url": "http://intersystems.com/fhir/extn/sda3/lib/lab-result-item-observation-value-type",
+				"valueString": "NM"
+			}, {
+				"url": "http://intersystems.com/fhir/extn/sda3/lib/lab-result-item-sub-id",
+				"valueString": "4"
+			}],
+			"interpretation": [{
+				"coding": [{
+					"display": "N"
+				}],
+				"text": "N"
+			}],
+			"referenceRange": [{
+				"high": {
+					"value": 33
+				},
+				"low": {
+					"value": 23
+				},
+				"text": "23-33"
+			}],
+			"status": "final",
+			"subject": {
+				"reference": "urn:uuid:15e01c26-664b-42c0-ae17-52ee0b4e3691"
+			},
+			"valueQuantity": {
+				"code": "mol/L",
+				"system": "http://unitsofmeasure.org",
+				"unit": "mol/L",
+				"value": 27
+			}
+		}
+	}, {
+		"request": {
+			"method": "POST",
+			"url": "Observation"
+		},
+		"fullUrl": "urn:uuid:be81281a-4aa2-4afa-936c-1af7dddc3455",
+		"resource": {
+			"resourceType": "Observation",
+			"category": [{
+				"coding": [{
+					"code": "laboratory",
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category"
+				}]
+			}],
+			"code": {
+				"coding": [{
+					"code": "46424-8",
+					"display": "Hemolysis Index SerPl-aCnc",
+					"system": "http://loinc.org"
+				}],
+				"extension": [{
+					"url": "http://intersystems.com/fhir/extn/sda3/lib/code-table-detail-lab-test-item-prior-codes",
+					"valueCodeableConcept": {
+						"coding": [{
+							"code": "C1221",
+							"display": "Haemolysis",
+							"extension": [{
+								"url": "http://intersystems.com/fhir/extn/sda3/lib/prior-code-code-system",
+								"valueString": "L"
+							}]
+						}],
+						"text": "A"
+					}
+				}]
+			},
+			"effectiveDateTime": "2022-09-21T09:00:00+10:00",
+			"extension": [{
+				"url": "http://intersystems.com/fhir/extn/sda3/lib/lab-result-item-observation-value-type",
+				"valueString": "CE"
+			}, {
+				"url": "http://intersystems.com/fhir/extn/sda3/lib/lab-result-item-result-coded-value",
+				"valueCodeableConcept": {
+					"coding": [{
+						"code": "M",
+						"display": "Mild",
+						"extension": [{
+							"url": "http://intersystems.com/fhir/extn/sda3/lib/code-table-translated-s-d-a-coding-standard",
+							"valueString": "L"
+						}]
+					}]
+				}
+			}, {
+				"url": "http://intersystems.com/fhir/extn/sda3/lib/lab-result-item-sub-id",
+				"valueString": "5"
+			}],
+			"status": "final",
+			"subject": {
+				"reference": "urn:uuid:15e01c26-664b-42c0-ae17-52ee0b4e3691"
+			},
+			"valueString": "Mild"
+		}
+	}, {
+		"request": {
+			"method": "PUT",
+			"url": "Practitioner/11b72f65-7823-4c88-865f-69b1011f2d40"
+		},
+		"fullUrl": "Practitioner/11b72f65-7823-4c88-865f-69b1011f2d40",
+		"resource": {
+			"resourceType": "Practitioner",
+			"extension": [{
+				"url": "http://intersystems.com/fhir/extn/sda3/lib/code-table-detail-care-provider-description",
+				"valueString": "8,"
+			}],
+			"identifier": [{
+				"value": "8"
+			}],
+			"name": [{
+				"family": "8",
+				"text": " 8"
+			}],
+			"id": "11b72f65-7823-4c88-865f-69b1011f2d40"
+		}
+	}, {
+		"request": {
+			"method": "POST",
+			"url": "DiagnosticReport"
+		},
+		"fullUrl": "urn:uuid:9c3f8fe9-5805-4536-9e49-92ba7c3d7610",
+		"resource": {
+			"resourceType": "DiagnosticReport",
+			"basedOn": [{
+				"reference": "urn:uuid:ec997903-1168-4d97-aa0f-37f6f1e0d66d"
+			}],
+			"category": [{
+				"coding": [{
+					"code": "CH"
+				}]
+			}],
+			"code": {
+				"coding": [{
+					"code": "55231-5",
+					"display": "Lytes Pnl Bld",
+					"system": "http://loinc.org"
+				}],
+				"extension": [{
+					"url": "http://intersystems.com/fhir/extn/sda3/lib/code-table-translated-prior-codes",
+					"valueCodeableConcept": {
+						"coding": [{
+							"code": "C005",
+							"display": "ELECTROLYTES",
+							"extension": [{
+								"url": "http://intersystems.com/fhir/extn/sda3/lib/prior-code-code-system",
+								"valueString": "L"
+							}]
+						}],
+						"text": "A"
+					}
+				}]
+			},
+			"effectivePeriod": {
+				"start": "2022-09-21T00:00:00+10:00"
+			},
+			"identifier": [{
+				"type": {
+					"coding": [{
+						"code": "FILL",
+						"display": "Filler Identifier",
+						"system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+					}],
+					"text": "FillerId"
+				},
+				"use": "official",
+				"value": "22B000011"
+			}, {
+				"type": {
+					"coding": [{
+						"code": "PLAC",
+						"display": "Placer Identifier",
+						"system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+					}],
+					"text": "PlacerId"
+				},
+				"use": "official"
+			}],
+			"issued": "2022-09-21T15:12:00+10:00",
+			"performer": [{
+				"reference": "urn:uuid:11b72f65-7823-4c88-865f-69b1011f2d40"
+			}],
+			"result": [{
+				"reference": "urn:uuid:f92498b4-7ad9-4c52-9915-0034b644942a"
+			}, {
+				"reference": "urn:uuid:f131d0a1-1485-4279-92ac-0879a39650b5"
+			}, {
+				"reference": "urn:uuid:02f33e62-eaf9-487f-9fbf-9ff232d198e3"
+			}, {
+				"reference": "urn:uuid:92755cb4-f08f-44d7-9bd4-658b9ed681f8"
+			}, {
+				"reference": "urn:uuid:be81281a-4aa2-4afa-936c-1af7dddc3455"
+			}],
+			"status": "final",
+			"subject": {
+				"reference": "urn:uuid:15e01c26-664b-42c0-ae17-52ee0b4e3691"
+			}
+		}
+	}]
+}
