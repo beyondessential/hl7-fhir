@@ -1,5 +1,5 @@
 ## Patients (patient*.fhir.json)
-Here is an inventory of files:
+Example inventory:
 - Basic Patient: [**patient1.fhir.json**](patient1.fhir.json): Ryan Ashwood
 - Merged Patient: [**patient.merged.fhir.json**](patient.merged.fhir.json): Johnothan Purcey
 - Mergee Patient: [**patient.mergee.fhir.json**](patient.mergee.fhir.json): John Purcey
@@ -21,4 +21,11 @@ The flow is this:
 
 
 ## Service Requests
+Example inventory:
+- X-ray of left hand, left elbow and left forearm: [**serviceRequest.x-ray.fhir.json**](serviceRequest.x-ray.fhir.json)
+- CT Scan of Sinuses + Brain post -IV contrast & CT Facial Bones post - IV contrast: [**serviceRequest.ct.fhir.json**](serviceRequest.ct.fhir.json) 
 
+| Identifier |        Category        |    Subject   | Status | Priority | Code <br>(modality) |                                  Order Detail                                  |
+|:----------:|:----------------------:|:------------:|:------:|:--------:|:-------------------:|:------------------------------------------------------------------------------:|
+| VTBZWN     | 363679005<br>(Imaging) | Ryan Ashwood | active | urgent   | X-ray               | - Left Hand (2LHA)<br>- Left Elbow (2LEL)<br>- Left Forarm (2LFR)              |
+| VRTDCN     | 363679005<br>(Imaging) | John Purcey  | active | routine  | CT Scan             | - CT Sinuses + Brain post -IV contrast<br>- CT Facial Bones post - IV contrast |

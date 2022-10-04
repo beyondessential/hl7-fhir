@@ -4,7 +4,7 @@
     "identifier": [
         {
             "system": "http://data-dictionary.tamanu-fiji.org/tamanu-mrid-imagingrequest.html",
-            "value": "VTBZWN"
+            "value": "VRTDCN"
         }
     ],
     "category": [
@@ -19,20 +19,20 @@
     ],
     "subject": {
         "reference": "Patient/592a0273-ad6b-4d1e-acbf-0076a8011be8",
-        "display": "Ryan Ashwood"
+        "display": "John Purcey"
     },
     "status": "active",
-    "priority": "urgent",
+    "priority": "routine",
     "code": {
-        "text": "X-ray"
+        "text": "CT Scan"
     },
     "orderDetail": [
         {
             "coding": [
                 {
                     "system": "http://data-dictionary.tamanu-fiji.org/rispacs-billing-code.html",
-                    "code": "2LHA",
-                    "display": "HAND (LEFT) DIGITISED"
+                    "code": "CTSBC",
+                    "display": "CT Sinuses + Brain post -IV contrast"
                 }
             ]
         },
@@ -40,17 +40,8 @@
             "coding": [
                 {
                     "system": "http://data-dictionary.tamanu-fiji.org/rispacs-billing-code.html",
-                    "code": "2LEL",
-                    "display": "ELBOW (LEFT) DIGITISED"
-                }
-            ]
-        },
-        {
-            "coding": [
-                {
-                    "system": "http://data-dictionary.tamanu-fiji.org/rispacs-billing-code.html",
-                    "code": "2LFR",
-                    "display": "FOREARM (LEFT) DIGITISED"
+                    "code": "CTFBC",
+                    "display": "CT Facial Bones post - IV contrast"
                 }
             ]
         }
