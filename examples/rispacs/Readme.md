@@ -1,3 +1,6 @@
+# Test data for the Tamanu RISPACS integration
+
+Please note that all this is test data and these are not real people or real procedures.
 ## Patients (patient*.fhir.json)
 Example inventory:
 - Basic Patient: [**patient1.fhir.json**](patient1.fhir.json): Ryan Ashwood
