@@ -1,0 +1,19 @@
+{
+    "resourceType": "Observation",
+    "id": "1254f1a7-a8fb-40be-9576-3cfcda696836",
+    "basedOn": [{
+        "identifier": {
+            "value": "urn:uuid:00a2c05b-f980-48a8-aec0-3d4fe0122f324",
+            "system": "urn:ietf:rfc:3986",
+            "type": "ServiceRequest"
+        }
+    }],
+    "status": "final",
+    "note": [{
+        "text": "The clinician has discovered a buildup of brain fluid within the circumference of the right ocular cavity."
+    }],
+    "identifier": [{
+        "system": "http://data-dictionary.tamanu-fiji.org/ris-accession-number.htm",
+        "value": "ABCD1234"
+    }]
+}

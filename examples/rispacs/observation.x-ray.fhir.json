@@ -1,0 +1,19 @@
+{
+    "resourceType": "Observation",
+    "id": "4b2c73be-205a-4bd1-acc4-cad9a8c96f16",
+    "basedOn": [{
+        "identifier": {
+            "value": "urn:uuid:9ad99d61-0711-40fc-a758-d67c3ef1814a",
+            "system": "urn:ietf:rfc:3986",
+            "type": "ServiceRequest"
+        }
+    }],
+    "status": "final",
+    "note": [{
+        "text": "Hairline fracture along the left upper humerus"
+    }],
+    "identifier": [{
+        "system": "http://data-dictionary.tamanu-fiji.org/ris-accession-number.htm",
+        "value": "WXYZ7890"
+    }]
+}
