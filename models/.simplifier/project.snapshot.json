@@ -1,0 +1,30 @@
+{
+  "Timestamp": "0001-01-01T00:00:00+00:00",
+  "Files": {
+    "package.json": {
+      "Length": 104,
+      "LastWriteTime": "2022-09-13T17:37:10+00:00",
+      "Hash": "A606472D97A4A4E9364D1464F6973093"
+    },
+    "DiagnosticReport.StructureDefinition.json": {
+      "Length": 2138,
+      "LastWriteTime": "2022-09-13T06:19:02.7378863+00:00",
+      "Hash": "0AD922ECD1F4778C4DAF508DF40192D7"
+    },
+    "Observation.StructureDefinition.json": {
+      "Length": 2902,
+      "LastWriteTime": "2022-09-13T06:54:57.8575367+00:00",
+      "Hash": "D533083FDB65DCB3F99387C7FAC50D26"
+    },
+    "Patient.StructureDefinition.json": {
+      "Length": 1882,
+      "LastWriteTime": "2022-09-14T01:14:17.9223745+00:00",
+      "Hash": "8E63079CC3AD417B37B0AD5F3311FB9E"
+    },
+    "project.yaml": {
+      "Length": 20,
+      "LastWriteTime": "2022-09-14T03:38:21.0408025+00:00",
+      "Hash": "42B23FADEA2F80D9D76908D39CD8463A"
+    }
+  }
+}
