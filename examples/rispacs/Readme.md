@@ -20,7 +20,7 @@ The flow is this:
 | False  | Miss  | Jane Purcey      | ZAVN19458  | NULL   | 1983-09-03 | Female | 8682308 | City: Lautoka | Replaced by John Purcey<br>See also Johnothan Purcey |
 
 
-## Service Requests
+## Service Requests (serviceRequest*.fhir.json)
 Example inventory:
 - X-ray of left hand, left elbow and left forearm: [**serviceRequest.x-ray.fhir.json**](serviceRequest.x-ray.fhir.json)
 - CT Scan of Sinuses + Brain post -IV contrast & CT Facial Bones post - IV contrast: [**serviceRequest.ct.fhir.json**](serviceRequest.ct.fhir.json) 
