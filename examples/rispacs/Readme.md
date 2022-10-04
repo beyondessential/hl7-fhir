@@ -1,9 +1,9 @@
 ## Patients (patient*.fhir.json)
 Here is an inventory of files:
-- Basic Patient: **patient1.fhir.json**: Ryan Ashwood
-- Merged Patient: **patient.merged.fhir.json**: Johnothan Purcey
-- Mergee Patient: **patient.mergee.fhir.json**: John Purcey
-- Mergee Second Removed Patient: **patient.mergedBelow.fhir.json**: Jane Purcey
+- Basic Patient: [**patient1.fhir.json**](patient1.fhir.json): Ryan Ashwood
+- Merged Patient: [**patient.merged.fhir.json**](patient.merged.fhir.json): Johnothan Purcey
+- Mergee Patient: [**patient.mergee.fhir.json**](patient.mergee.fhir.json): John Purcey
+- Mergee Second Removed Patient: [**patient.mergedBelow.fhir.json**](patient.mergedBelow.fhir.json): Jane Purcey
 
 
 The flow is this:
