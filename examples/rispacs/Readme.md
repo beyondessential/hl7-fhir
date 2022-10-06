@@ -15,12 +15,12 @@ The flow is this:
 
 
 
-| Active | Title |       Name       |   VRS Id   | RTA    |     DoB    |   Sex  | Phone   | Address       | Merged?                                              |
-|--------|-------|:----------------:|:----------:|--------|:----------:|:------:|---------|---------------|------------------------------------------------------|
-| True   | Mr    | Ryan Ashwood     | UTOE353558 | NULL   | 1968-10-28 | Male   | 7018569 | City: Lautoka | NULL                                                 |
-| False  | Mr    | Johnothan Purcey | QLKE835509 | 656985 | 1980-04-27 | Male   | 9639954 | City: Suva    | Replaced by John Purcey<br>See also Jane Purcey      |
-| True   | Mr    | John Purcey      | WVNF173345 | NULL   | 1980-04-27 | Male   | 8041123 | City: Nadi    | Replaces Johnothan Purcey<br>Replaces Jane Purcey    |
-| False  | Miss  | Jane Purcey      | ZAVN19458  | NULL   | 1983-09-03 | Female | 8682308 | City: Lautoka | Replaced by John Purcey<br>See also Johnothan Purcey |
+| Active | Title |       Name       |   VRS Id   |     DoB    |   Sex  | Phone   | Address       | Merged?                                              |
+|--------|-------|:----------------:|:----------:|:----------:|:------:|---------|---------------|------------------------------------------------------|
+| True   | Mr    | Ryan Ashwood     | UTOE353558 | 1968-10-28 | Male   | 7018569 | City: Lautoka | NULL                                                 |
+| False  | NULL  | Johnothan Purcey | QLKE835509 | 1980-04-27 | Male   | 9639954 | NULL          | Replaced by John Purcey<br>See also Jane Purcey      |
+| True   | Mr    | John Purcey      | WVNF173345 | 1980-04-27 | Male   | 8041123 | City: Nadi    | Replaces Johnothan Purcey<br>Replaces Jane Purcey    |
+| False  | NULL  | Jane Purcey      | ZAVN19458  | 1983-09-03 | Female | 8682308 | NULL          | Replaced by John Purcey<br>See also Johnothan Purcey |
 
 
 ## Service Requests (serviceRequest*.fhir.json)

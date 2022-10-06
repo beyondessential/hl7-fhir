@@ -8,19 +8,11 @@
             "value": "QLKE835509",
             "assigner": "VRS",
             "system": "http://data-dictionary.tamanu-fiji.org/application-reference-number.html"
-        },
-        {
-            "use": "secondary",
-            "assigner": "RTA",
-            "value": "656985"
         }
     ],
     "name": [
         {
             "use": "official",
-            "prefix": [
-                "Mr"
-            ],
             "family": "Purcey",
             "given": [
                 "Johnothan"
@@ -29,20 +21,8 @@
     ],
     "birthDate": "1980-04-27",
     "gender": "male",
-    "address": [
-        {
-            "type": "physical",
-            "use": "home",
-            "city": "Suva",
-            "line": []
-        }
-    ],
-    "telecom": [
-        {
-            "rank": 1,
-            "value": "9639954"
-        }
-    ],
+    "address": [],
+    "telecom": [],
     "link": [
         {
             "other": {
