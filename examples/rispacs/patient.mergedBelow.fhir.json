@@ -13,9 +13,6 @@
     "name": [
         {
             "use": "official",
-            "prefix": [
-                "Miss"
-            ],
             "family": "Purcey",
             "given": [
                 "Jane"
@@ -24,20 +21,8 @@
     ],
     "birthDate": "1983-09-03",
     "gender": "female",
-    "address": [
-        {
-            "type": "physical",
-            "use": "home",
-            "city": "Lautoka",
-            "line": []
-        }
-    ],
-    "telecom": [
-        {
-            "rank": 1,
-            "value": "8682308"
-        }
-    ],
+    "address": [],
+    "telecom": [],
     "link": [
         {
             "other": {
