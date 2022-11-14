@@ -37,5 +37,20 @@
             "rank": 1,
             "value": "7018569"
         }
+    ],
+    "extension" : [
+      {
+        "url" : "http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity",
+        "valueCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "http://data-dictionary.tamanu-fiji.org/extensions/ethnic-group-code.html",
+              "code" : "43112",
+              "display" : "Fijian Indian"
+            }
+            
+          ]
+        }
+      }
     ]
 }
