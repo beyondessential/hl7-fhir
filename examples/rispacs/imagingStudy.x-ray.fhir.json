@@ -1,5 +1,5 @@
 {
-    "resourceType": "Observation",
+    "resourceType": "ImagingStudy",
     "id": "4b2c73be-205a-4bd1-acc4-cad9a8c96f16",
     "basedOn": [{
         "identifier": {
