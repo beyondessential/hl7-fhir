@@ -12,7 +12,8 @@
             "coding": [
                 {
                     "system": "http://snomed.info/sct",
-                    "code": "108252007"
+                    "code": "108252007",
+                    "display": "Laboratory procedure"
                 }
             ]
         }
@@ -21,7 +22,7 @@
         "reference": "Patient/1a5deca5-6b4c-4d65-89b7-803f85ad4e64",
         "display": "Jack Johnson"
     },
-    "status": "completed",
+    "status": "active",
     "contained": [
         {
             "collection": {
@@ -34,7 +35,7 @@
     "code": {
         "coding": [
             {
-                "system": "http://data-dictionary.tamanu-fiji.org/omni-lab-panels.html",
+                "system": "http://intersystems.com/fhir/extn/sda3/lib/code-table-translated-prior-codes",
                 "code": "B0030",
                 "display": "Chem 7"
             }
@@ -44,7 +45,7 @@
         {
             "coding": [
                 {
-                    "system": "http://data-dictionary.tamanu-fiji.org/omni-lab-tests.html",
+                    "system": "http://intersystems.com/fhir/extn/sda3/lib/code-table-translated-prior-codes",
                     "code": "B00010",
                     "display": "^Sodium"
                 }
@@ -53,7 +54,7 @@
         {
             "coding": [
                 {
-                    "system": "http://data-dictionary.tamanu-fiji.org/omni-lab-tests.html",
+                    "system": "http://intersystems.com/fhir/extn/sda3/lib/code-table-translated-prior-codes",
                     "code": "B00020",
                     "display": "^Potassium"
                 }
@@ -62,7 +63,7 @@
         {
             "coding": [
                 {
-                    "system": "http://data-dictionary.tamanu-fiji.org/omni-lab-tests.html",
+                    "system": "http://intersystems.com/fhir/extn/sda3/lib/code-table-translated-prior-codes",
                     "code": "B00030",
                     "display": "^Chloride"
                 }
@@ -71,7 +72,7 @@
         {
             "coding": [
                 {
-                    "system": "http://data-dictionary.tamanu-fiji.org/omni-lab-tests.html",
+                    "system": "http://intersystems.com/fhir/extn/sda3/lib/code-table-translated-prior-codes",
                     "code": "B00040",
                     "display": "^Bicarbonate"
                 }
@@ -80,7 +81,7 @@
         {
             "coding": [
                 {
-                    "system": "http://data-dictionary.tamanu-fiji.org/omni-lab-tests.html",
+                    "system": "http://intersystems.com/fhir/extn/sda3/lib/code-table-translated-prior-codes",
                     "code": "B00060",
                     "display": "^Creatinine"
                 }
@@ -89,7 +90,7 @@
         {
             "coding": [
                 {
-                    "system": "http://data-dictionary.tamanu-fiji.org/omni-lab-tests.html",
+                    "system": "http://intersystems.com/fhir/extn/sda3/lib/code-table-translated-prior-codes",
                     "code": "B00070",
                     "display": "^Urea"
                 }
@@ -98,7 +99,7 @@
         {
             "coding": [
                 {
-                    "system": "http://data-dictionary.tamanu-fiji.org/omni-lab-tests.html",
+                    "system": "http://intersystems.com/fhir/extn/sda3/lib/code-table-translated-prior-codes",
                     "code": "B00150",
                     "display": "^Glucose"
                 }
@@ -107,7 +108,7 @@
         {
             "coding": [
                 {
-                    "system": "http://data-dictionary.tamanu-fiji.org/omni-lab-tests.html",
+                    "system": "http://intersystems.com/fhir/extn/sda3/lib/code-table-translated-prior-codes",
                     "code": "B00050",
                     "display": "Calculated: Anion Gap"
                 }
@@ -116,7 +117,7 @@
         {
             "coding": [
                 {
-                    "system": "http://data-dictionary.tamanu-fiji.org/omni-lab-tests.html",
+                    "system": "http://intersystems.com/fhir/extn/sda3/lib/code-table-translated-prior-codes",
                     "code": "B00090",
                     "display": "Calculated: Osmolality"
                 }
@@ -125,7 +126,7 @@
         {
             "coding": [
                 {
-                    "system": "http://data-dictionary.tamanu-fiji.org/omni-lab-tests.html",
+                    "system": "http://intersystems.com/fhir/extn/sda3/lib/code-table-translated-prior-codes",
                     "code": "B00080",
                     "display": "Calculated: Urea/Creatinine Ratio"
                 }
@@ -134,7 +135,7 @@
         {
             "coding": [
                 {
-                    "system": "http://data-dictionary.tamanu-fiji.org/omni-lab-tests.html",
+                    "system": "http://intersystems.com/fhir/extn/sda3/lib/code-table-translated-prior-codes",
                     "code": "B00110",
                     "display": "Calculated: eGFR (patients over 18 years)"
                 }
@@ -143,7 +144,7 @@
         {
             "coding": [
                 {
-                    "system": "http://data-dictionary.tamanu-fiji.org/omni-lab-tests.html",
+                    "system": "http://intersystems.com/fhir/extn/sda3/lib/code-table-translated-prior-codes",
                     "code": "B00980",
                     "display": "Haemolysis Index"
                 }
@@ -152,7 +153,7 @@
         {
             "coding": [
                 {
-                    "system": "http://data-dictionary.tamanu-fiji.org/omni-lab-tests.html",
+                    "system": "http://intersystems.com/fhir/extn/sda3/lib/code-table-translated-prior-codes",
                     "code": "B00990",
                     "display": "Lipemic Index"
                 }
