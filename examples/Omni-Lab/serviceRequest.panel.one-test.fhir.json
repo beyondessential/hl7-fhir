@@ -12,7 +12,8 @@
             "coding": [
                 {
                     "system": "http://snomed.info/sct",
-                    "code": "108252007"
+                    "code": "108252007",
+                    "display": "Laboratory procedure"
                 }
             ]
         }
