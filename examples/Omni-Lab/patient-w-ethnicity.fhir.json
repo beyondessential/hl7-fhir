@@ -1,0 +1,56 @@
+{
+    "resourceType": "Patient",
+    "id": "e70a0b8d-12f2-4093-a3fd-b80a83cfbfd5",
+    "meta": {
+        "lastUpdated": "2023-02-13T14:16:23-04:00"
+    },
+    "extension": [
+        {
+            "url": "http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity",
+            "valueCodeableConcept": {
+                "coding": [
+                    {
+                        "display": "Fijian/iTaukei",
+                        "code": "36111",
+                        "system": "http://data-dictionary.tamanu-fiji.org/extensions/ethnic-group-code.html"
+                    }
+                ]
+            }
+        }
+    ],
+    "identifier": [
+        {
+            "assigner": {
+                "display": "Tamanu"
+            },
+            "value": "PVXC755243",
+            "system": "http://tamanu.io/data-dictionary/application-reference-number.html",
+            "use": "usual"
+        }
+    ],
+    "active": true,
+    "name": [
+        {
+            "suffix": [],
+            "prefix": [],
+            "given": [
+                "Jack",
+                "Seth"
+            ],
+            "family": "Bouma",
+            "use": "official"
+        },
+        {
+            "suffix": [],
+            "prefix": [],
+            "given": [],
+            "text": "Matthew",
+            "use": "nickname"
+        }
+    ],
+    "telecom": [],
+    "gender": "male",
+    "birthDate": "1959-02-19",
+    "address": [],
+    "link": []
+}
