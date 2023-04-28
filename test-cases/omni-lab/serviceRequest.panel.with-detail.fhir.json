@@ -3,7 +3,7 @@
     "id": "00a2c05b-f980-48a8-aec0-3d4fe078a824",
     "identifier": [
         {
-            "system": "http://data-dictionary.tamanu-fiji.org/tamanu-mrid-imagingrequest.html",
+            "system": "http://data-dictionary.tamanu-fiji.org/tamanu-mrid-labrequest.html",
             "value": "VTBZWN"
         }
     ],
@@ -31,7 +31,17 @@
             "resourceType": "Specimen"
         }
     ],
+    "requester": {
+        "reference": "Practitioner/0735bc54-449f-498b-a919-8142deb6095c",
+        "display": "Doctor Doctor"
+    },
     "priority": "urgent",
+    "note": [
+        {
+            "time": "2022-02-07T13:28:17+10:00",
+            "text": "This patient requires a full Chem 7 test \n\n Showing signs of high Sodium"
+        }
+    ],
     "code": {
         "coding": [
             {
@@ -159,5 +169,8 @@
                 }
             ]
         }
-    ]
+    ],
+    "encounter": {
+        "reference": "Encounter/bdebdc5e-753e-45f5-8fd0-01c49bd88f9e"
+    }
 }
