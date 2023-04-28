@@ -26,7 +26,7 @@ Example:
 
 ## Encounters (encounter.fhir.json)
 Example:
-- Patient Jack Johnson Requiring full Chem 7 tests: [**serviceRequest.panel.with-detail.fhir.json**](serviceRequest.panel.with-detail.fhir.json)
+- An encounter for John Yossarian in the clinical treatment room: [**serviceRequest.panel.with-detail.fhir.json**](serviceRequest.panel.with-detail.fhir.json)
 
 | Test Case      | has Encounter been discharged? | Encounter.encounterType |         Encounter.patient.id         | Encounter.patient.firstName | Encounter.patient.lastName | Encounter.[Location]location.name | Encounter.[Location]<br>location.id |
 |----------------|:------------------------------:|:-----------------------:|:------------------------------------:|:---------------------------:|----------------------------|-----------------------------------|-------------------------------------|
