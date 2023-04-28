@@ -12,13 +12,13 @@
         }
     ],
     "subject": {
-        "reference": "Patient/0f7f53a4-f085-4c49-b3ce-60eabe99fc26",
-        "display": "James Squire"
+        "reference": "Patient/4c176418-86a4-48b5-9a6c-798b0b13a1e4",
+        "display": "John Yossarian"
     },
     "location": [{
         "location": {
             "display": "Clinical Treatment Room",
-            "reference": "CLINICALTREATMENTROOM"
+            "reference": "Location/clinicalTreatmentRoom"
         },
         "status": "active"
     }]
