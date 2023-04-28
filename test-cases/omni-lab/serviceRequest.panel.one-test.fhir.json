@@ -3,8 +3,8 @@
     "id": "00a2c05b-f980-48a8-aec0-3d4fe078a824",
     "identifier": [
         {
-            "system": "http://data-dictionary.tamanu-fiji.org/tamanu-mrid-imagingrequest.html",
-            "value": "VTBZWN"
+            "system": "http://data-dictionary.tamanu-fiji.org/tamanu-mrid-labrequest.html",
+            "value": "CTZZWN"
         }
     ],
     "category": [
@@ -26,12 +26,12 @@
     "contained": [
         {
             "collection": {
-                "collectedDateTime": "2022-02-07T13:28:17+10:00"
+                "collectedDateTime": "2022-07-12T13:28:17+10:00"
             },
             "resourceType": "Specimen"
         }
     ],
-    "priority": "urgent",
+    "priority": "stat",
     "code": {
         "coding": [
             {
@@ -51,5 +51,18 @@
                 }
             ]
         }
-    ]
+    ],
+    "requester": {
+        "reference": "Practitioner/d6fa9c10-93e4-44e8-9d9c-edfc8dccd3f9",
+        "display": "Doctor Seuss"
+    },
+    "note": [
+        {
+            "time": "2023-01-21T06:23:03+10:00",
+            "text": "Checking sodium again \n\n after other tests came back clear"
+        }
+    ],
+    "encounter": {
+        "reference": "Encounter/edf593f8-37dc-4c59-8c82-98700b94f26f"
+    }
 }
