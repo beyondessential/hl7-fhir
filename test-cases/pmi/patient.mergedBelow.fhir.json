@@ -1,13 +1,19 @@
 {
     "resourceType": "Patient",
-    "id": "dc8ea9a6-d33a-4419-93da-7b8a91ffb9b0",
+    "id": "998ea9a6-d33a-4419-93da-7b8a91ffb9b0",
     "active": false,
     "identifier": [
         {
             "use": "usual",
-            "value": "QLKE835509",
+            "value": "ZAVN19458", // this for backward compatibility and will soon be deprecated
             "assigner": "VRS",
             "system": "http://data-dictionary.tamanu-fiji.org/application-reference-number.html"
+        },
+        {
+            "use": "official",
+            "value": "ZAVN19458", // this for Fiji ASPEN
+            "assigner": "Tamanu",
+            "system": "http://tamanu.io/data-dictionary/tamanu-mrid-patient.html"
         }
     ],
     "name": [
@@ -15,12 +21,12 @@
             "use": "official",
             "family": "Purcey",
             "given": [
-                "Johnothan"
+                "Jane"
             ]
         }
     ],
-    "birthDate": "1980-04-27",
-    "gender": "male",
+    "birthDate": "1983-09-03",
+    "gender": "female",
     "address": [],
     "telecom": [],
     "link": [
@@ -32,7 +38,7 @@
         },
         {
             "other": {
-                "reference": "Patient/998ea9a6-d33a-4419-93da-7b8a91ffb9b0"
+                "reference": "Patient/dc8ea9a6-d33a-4419-93da-7b8a91ffb9b0"
             },
             "type": "seealso"
         }
