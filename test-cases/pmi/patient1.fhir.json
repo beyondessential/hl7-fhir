@@ -4,10 +4,22 @@
     "active": true,
     "identifier": [
         {
-            "use": "usual",
-            "value": "UTOE353558",
+            "use": "usual", 
+            "value": "UTOE353558", // this for backward compatibility and will soon be deprecated
             "assigner": "VRS",
             "system": "http://data-dictionary.tamanu-fiji.org/application-reference-number.html"
+        },
+        {
+            "use": "official", 
+            "value": "246801357", // this for Fiji ASPEN
+            "assigner": "National Health Number",
+            "system": "http://data-dictionary.tamanu-fiji.org/national-health-number.html"
+        },
+        {
+            "use": "secondary", 
+            "value": "UTOE353558",
+            "assigner": "Tamanu",
+            "system": "http://tamanu.io/data-dictionary/tamanu-mrid-patient.html"
         }
     ],
     "name": [

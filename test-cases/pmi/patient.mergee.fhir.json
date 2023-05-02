@@ -5,9 +5,15 @@
     "identifier": [
         {
             "use": "usual",
-            "value": "WVNF173345",
+            "value": "WVNF173345", // this for backward compatibility and will soon be deprecated
             "assigner": "VRS",
             "system": "http://data-dictionary.tamanu-fiji.org/application-reference-number.html"
+        },
+        {
+            "use": "official", 
+            "value": "WVNF173345", // this the Tamanu Id because no NHN has been entered
+            "assigner": "Tamanu",
+            "system": "http://tamanu.io/data-dictionary/tamanu-mrid-patient.html"
         }
     ],
     "name": [
