@@ -4,22 +4,51 @@
     "status": "in-progress",
     "class": [
         {
-            "coding": [{
-                "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                "code": "IMP",
-                "display": "inpatient encounter"
-            }]
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                    "code": "IMP",
+                    "display": "inpatient encounter"
+                }
+            ]
         }
     ],
     "subject": {
         "reference": "Patient/4c176418-86a4-48b5-9a6c-798b0b13a1e4",
         "display": "John Yossarian"
     },
-    "location": [{
-        "location": {
-            "display": "Clinical Treatment Room",
-            "reference": "Location/clinicalTreatmentRoom"
+    "location": [
+        {
+            "location": {
+                "display": "ANTENATAL",
+                "reference": "Location/ref/department/ANTENATAL"
+            },
+            "status": "active",
+            "physicalType": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+                        "code": "wa",
+                        "display": "ward"
+                    }
+                ]
+            }
         },
-        "status": "active"
-    }]
+        {
+            "location": {
+                "display": "BED-1",
+                "reference": "Location/ref/department/a/MEDICAL/BED-1"
+            },
+            "status": "active",
+            "physicalType": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+                        "code": "bd",
+                        "display": "bed"
+                    }
+                ]
+            }
+        }
+    ]
 }
