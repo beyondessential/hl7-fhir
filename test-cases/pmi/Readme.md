@@ -1,4 +1,4 @@
-# Test data for the Tamanu PMI integratio
+# Test data for the Tamanu PMI integration
 Please note that all this is test data and these are not real people.
 
 ## Patients (patient*.fhir.json)
