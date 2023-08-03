@@ -23,14 +23,6 @@
         "display": "Jack Johnson"
     },
     "status": "completed",
-    "contained": [
-        {
-            "collection": {
-                "collectedDateTime": "2022-07-12T13:28:17+10:00"
-            },
-            "resourceType": "Specimen"
-        }
-    ],
     "priority": "stat",
     "code": {
         "coding": [
