@@ -23,12 +23,9 @@
         "display": "Jack Johnson"
     },
     "status": "active",
-    "contained": [
+    "specimen": [
         {
-            "collection": {
-                "collectedDateTime": "2022-02-07T13:28:17+10:00"
-            },
-            "resourceType": "Specimen"
+            "reference": "Specimen/0b21b9cc-31a4-11ee-be56-0242ac120002"
         }
     ],
     "requester": {
