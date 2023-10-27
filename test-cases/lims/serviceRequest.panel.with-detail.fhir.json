@@ -42,7 +42,7 @@
     "code": {
         "coding": [
             {
-                "system": "http://intersystems.com/fhir/extn/sda3/lib/code-table-translated-prior-codes",
+                "system": "http://snomed.info/sct",
                 "code": "B0030",
                 "display": "Chem 7"
             }
@@ -52,7 +52,7 @@
         {
             "coding": [
                 {
-                    "system": "http://intersystems.com/fhir/extn/sda3/lib/code-table-translated-prior-codes",
+                    "system": "http://snomed.info/sct",
                     "code": "B00010",
                     "display": "^Sodium"
                 }
@@ -61,7 +61,7 @@
         {
             "coding": [
                 {
-                    "system": "http://intersystems.com/fhir/extn/sda3/lib/code-table-translated-prior-codes",
+                    "system": "http://snomed.info/sct",
                     "code": "B00020",
                     "display": "^Potassium"
                 }
@@ -70,7 +70,7 @@
         {
             "coding": [
                 {
-                    "system": "http://intersystems.com/fhir/extn/sda3/lib/code-table-translated-prior-codes",
+                    "system": "http://snomed.info/sct",
                     "code": "B00030",
                     "display": "^Chloride"
                 }
@@ -79,7 +79,7 @@
         {
             "coding": [
                 {
-                    "system": "http://intersystems.com/fhir/extn/sda3/lib/code-table-translated-prior-codes",
+                    "system": "http://snomed.info/sct",
                     "code": "B00040",
                     "display": "^Bicarbonate"
                 }
@@ -88,7 +88,7 @@
         {
             "coding": [
                 {
-                    "system": "http://intersystems.com/fhir/extn/sda3/lib/code-table-translated-prior-codes",
+                    "system": "http://snomed.info/sct",
                     "code": "B00060",
                     "display": "^Creatinine"
                 }
@@ -97,7 +97,7 @@
         {
             "coding": [
                 {
-                    "system": "http://intersystems.com/fhir/extn/sda3/lib/code-table-translated-prior-codes",
+                    "system": "http://snomed.info/sct",
                     "code": "B00070",
                     "display": "^Urea"
                 }
@@ -106,7 +106,7 @@
         {
             "coding": [
                 {
-                    "system": "http://intersystems.com/fhir/extn/sda3/lib/code-table-translated-prior-codes",
+                    "system": "http://snomed.info/sct",
                     "code": "B00150",
                     "display": "^Glucose"
                 }
@@ -115,7 +115,7 @@
         {
             "coding": [
                 {
-                    "system": "http://intersystems.com/fhir/extn/sda3/lib/code-table-translated-prior-codes",
+                    "system": "http://snomed.info/sct",
                     "code": "B00050",
                     "display": "Calculated: Anion Gap"
                 }
@@ -124,7 +124,7 @@
         {
             "coding": [
                 {
-                    "system": "http://intersystems.com/fhir/extn/sda3/lib/code-table-translated-prior-codes",
+                    "system": "http://snomed.info/sct",
                     "code": "B00090",
                     "display": "Calculated: Osmolality"
                 }
@@ -133,7 +133,7 @@
         {
             "coding": [
                 {
-                    "system": "http://intersystems.com/fhir/extn/sda3/lib/code-table-translated-prior-codes",
+                    "system": "http://snomed.info/sct",
                     "code": "B00080",
                     "display": "Calculated: Urea/Creatinine Ratio"
                 }
@@ -142,7 +142,7 @@
         {
             "coding": [
                 {
-                    "system": "http://intersystems.com/fhir/extn/sda3/lib/code-table-translated-prior-codes",
+                    "system": "http://snomed.info/sct",
                     "code": "B00110",
                     "display": "Calculated: eGFR (patients over 18 years)"
                 }
@@ -151,7 +151,7 @@
         {
             "coding": [
                 {
-                    "system": "http://intersystems.com/fhir/extn/sda3/lib/code-table-translated-prior-codes",
+                    "system": "http://snomed.info/sct",
                     "code": "B00980",
                     "display": "Haemolysis Index"
                 }
@@ -160,7 +160,7 @@
         {
             "coding": [
                 {
-                    "system": "http://intersystems.com/fhir/extn/sda3/lib/code-table-translated-prior-codes",
+                    "system": "http://snomed.info/sct",
                     "code": "B00990",
                     "display": "Lipemic Index"
                 }

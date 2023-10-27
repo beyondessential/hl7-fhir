@@ -1,0 +1,3 @@
+curl -L -g -X PUT "https://[base_url]/v1/integration/fhir/mat/ServiceRequest/7961de51-0a08-4d7d-8e0b-b7d4b3cad206" -H "Content-Type: application/json" -d "{
+    \"status\": \"complete\"
+    }"
