@@ -4,9 +4,7 @@
     "collection": {
         "collectedDateTime": "2022-07-12T13:28:17+10:00",
         "collector": {
-            "identifier": {
-                "value": "d5438c3c-ddfc-4a0a-aab7-3c6055603ba9"
-            },
+            "reference": "Patient/d5438c3c-ddfc-4a0a-aab7-3c6055603ba9",
             "display": "Hunter Collector"
         },
         "bodySite": {
