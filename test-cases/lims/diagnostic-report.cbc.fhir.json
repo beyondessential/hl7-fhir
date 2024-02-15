@@ -1,0 +1,844 @@
+{
+    "resourceType": "Bundle",
+    "id": "cbc",
+    "type": "collection",
+    "entry": [
+        {
+            "fullUrl": "https://example.com/base/DiagnosticReport/90ff2f8c-fd1b-4313-a5a7-0f015031db45",
+            "resource": {
+                "resourceType": "DiagnosticReport",
+                "id": "90ff2f8c-fd1b-4313-a5a7-0f015031db45",
+                "status": "final",
+                "basedOn": [
+                    {
+                        "reference": "ServiceRequest/128"
+                    }
+                ],
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                                "code": "HM",
+                                "display": "Haematology"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "57022-6",
+                            "display": "CBC"
+                        }
+                    ],
+                    "text": "CBC"
+                },
+                "subject": {
+                    "reference": "Patient/c3921b73-3981-4bdc-9154-a42d1526365d",
+                    "display": "Caroline Bini"
+                },
+                "issued": "2024-02-01T11:45:33+11:04",
+                "performer": [
+                    {
+                        "reference": "Pracitioner/0f6b5b5b-6db7-4e43-8fa3-512d70a6dc7a",
+                        "display": "Doctor Po Tien Lung"
+                    }
+                ],
+                "result": [
+                    {
+                        "id": "wbc",
+                        "reference": "Observation/wbc"
+                    },
+                    {
+                        "id": "rbc",
+                        "reference": "Observation/rbc"
+                    },
+                    {
+                        "id": "haemoglobin",
+                        "reference": "Observation/haemoglobin"
+                    },
+                    {
+                        "id": "hct",
+                        "reference": "Observation/hct"
+                    },
+                    {
+                        "id": "mcv",
+                        "reference": "Observation/mcv"
+                    },
+                    {
+                        "id": "mch",
+                        "reference": "Observation/mch"
+                    },
+                    {
+                        "id": "mchc",
+                        "reference": "Observation/mchc"
+                    },
+                    {
+                        "id": "plt",
+                        "reference": "Observation/plt"
+                    },
+                    {
+                        "id": "rdw-sd",
+                        "reference": "Observation/rdw-sd"
+                    },
+                    {
+                        "id": "rdw-cv",
+                        "reference": "Observation/rdw-cv"
+                    },
+                    {
+                        "id": "mpv",
+                        "reference": "Observation/mpv"
+                    },
+                    {
+                        "id": "neutrophils",
+                        "reference": "Observation/neutrophils"
+                    },
+                    {
+                        "id": "lymphocytes",
+                        "reference": "Observation/lymphocytes"
+                    },
+                    {
+                        "id": "monocytes",
+                        "reference": "Observation/monocytes"
+                    },
+                    {
+                        "id": "eosinophils",
+                        "reference": "Observation/eosinophils"
+                    },
+                    {
+                        "id": "basophils",
+                        "reference": "Observation/basophils"
+                    },
+                    {
+                        "id": "ig",
+                        "reference": "Observation/ig"
+                    }
+                ],
+                "conclusion": "FBC result shows CLL, please request flow cytometry for confirmation",
+                "presentedForm": [
+                    {
+                        "data": "JVBERi0xLjQKMSAwIG9iago8PAovVGl0bGUgKP7/AFUAYgBlAHIpCi9DcmVhdG9yICj+/wB3AGsAaAB0AG0AbAB0AG8AcABkAGYAIAAwAC4AMQAyAC4ANikKL1Byb2R1Y2VyICj+/wBRAHQAIAA0AC4AOAAuADcpCi9DcmVhdGlvbkRhdGUgKEQ6MjAyNDAxMjkxODM0NDlaKQo+PgplbmRvYmoKMyAwIG9iago8PAovVHlwZSAvRXh0R1N0YXRlCi9TQSB0cnVlCi9TTSAwLjAyCi9jYSAxLjAKL0NBIDEuMAovQUlTIGZhbHNlCi9TTWFzayAvTm9uZT4+CmVuZG9iago0IDAgb2JqClsvUGF0dGVybiAvRGV2aWNlUkdCXQplbmRvYmoKNiAwIG9iago8PAovVHlwZSAvWE9iamVjdAovU3VidHlwZSAvSW1hZ2UKL1dpZHRoIDcyCi9IZWlnaHQgNzIKL0JpdHNQZXJDb21wb25lbnQgOAovQ29sb3JTcGFjZSAvRGV2aWNlR3JheQovTGVuZ3RoIDcgMCBSCi9GaWx0ZXIgL0ZsYXRlRGVjb2RlCj4+CnN0cmVhbQp4nO3MsQ0AMAgDsPx/NGVFYqzY7AOcAIfeN4/H4/F4PB6Px+PxTLUEuNQFU1RDCmVuZHN0cmVhbQplbmRvYmoKNyAwIG9iago0NgplbmRvYmoKOCAwIG9iago8PAovVHlwZSAvWE9iamVjdAovU3VidHlwZSAvSW1hZ2UKL1dpZHRoIDcyCi9IZWlnaHQgNzIKL0JpdHNQZXJDb21wb25lbnQgOAovQ29sb3JTcGFjZSAvRGV2aWNlUkdCCi9TTWFzayA2IDAgUgovTGVuZ3RoIDkgMCBSCi9GaWx0ZXIgL0ZsYXRlRGVjb2RlCj4+CnN0cmVhbQp4nO3Z30tTYRgH8JVmpUuG/RpOmaTDaOBcJJ",
+                        "title": "Full report attached",
+                        "contentType": "application/pdf"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "https://example.com/base/Observation/wbc",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "wbc",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "11156-7",
+                            "display": "WBC"
+                        }
+                    ],
+                    "text": "WBC"
+                },
+                "subject": {
+                    "display": "Caroline Bini",
+                    "reference": "Patient/c3921b73-3981-4bdc-9154-a42d1526365d"
+                },
+                "valueQuantity": {
+                    "value": 100,
+                    "unit": "x10^3/uL"
+                },
+                "referenceRange": [
+                    {
+                        "low": {
+                            "value": 4,
+                            "unit": "x10^3/uL"
+                        },
+                        "high": {
+                            "value": 10,
+                            "unit": "x10^3/uL"
+                        }
+                    }
+                ],
+                "note": [
+                    {
+                        "text": "Far exceeding limit"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "https://example.com/base/Observation/rbc",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "rbc",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "6742-01-01T00:00:00.000Z",
+                            "display": "RBC"
+                        }
+                    ],
+                    "text": "RBC"
+                },
+                "subject": {
+                    "display": "Caroline Bini",
+                    "reference": "Patient/c3921b73-3981-4bdc-9154-a42d1526365d"
+                },
+                "valueQuantity": {
+                    "value": 3,
+                    "unit": "x10^6 /uL"
+                },
+                "referenceRange": [
+                    {
+                        "low": {
+                            "value": 4,
+                            "unit": "x10^6 /uL"
+                        },
+                        "high": {
+                            "value": 6.2,
+                            "unit": "x10^6 /uL"
+                        }
+                    }
+                ],
+                "note": [
+                    {
+                        "text": "Too low"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "https://example.com/base/Observation/haemoglobin",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "haemoglobin",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "718-7",
+                            "display": "Haemoglobin"
+                        }
+                    ],
+                    "text": "Haemoglobin"
+                },
+                "subject": {
+                    "display": "Caroline Bini",
+                    "reference": "Patient/c3921b73-3981-4bdc-9154-a42d1526365d"
+                },
+                "valueQuantity": {
+                    "value": 12,
+                    "unit": "g/dL"
+                },
+                "referenceRange": [
+                    {
+                        "low": {
+                            "value": 13,
+                            "unit": "g/dL"
+                        },
+                        "high": {
+                            "value": 18,
+                            "unit": "g/dL"
+                        }
+                    }
+                ],
+                "note": [
+                    {
+                        "text": "Too low"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "https://example.com/base/Observation/hct",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "hct",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "20570-8",
+                            "display": "Hct"
+                        }
+                    ],
+                    "text": "Hct"
+                },
+                "subject": {
+                    "display": "Caroline Bini",
+                    "reference": "Patient/c3921b73-3981-4bdc-9154-a42d1526365d"
+                },
+                "valueQuantity": {
+                    "value": 30,
+                    "unit": "%"
+                },
+                "referenceRange": [
+                    {
+                        "low": {
+                            "value": 39,
+                            "unit": "%"
+                        },
+                        "high": {
+                            "value": 54,
+                            "unit": "%"
+                        }
+                    }
+                ],
+                "note": [
+                    {
+                        "text": "Too low"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "https://example.com/base/Observation/mcv",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "mcv",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "30428-7",
+                            "display": "MCV"
+                        }
+                    ],
+                    "text": "MCV"
+                },
+                "subject": {
+                    "display": "Caroline Bini",
+                    "reference": "Patient/c3921b73-3981-4bdc-9154-a42d1526365d"
+                },
+                "valueQuantity": {
+                    "value": 100,
+                    "unit": "fL"
+                },
+                "referenceRange": [
+                    {
+                        "low": {
+                            "value": 80,
+                            "unit": "fL"
+                        },
+                        "high": {
+                            "value": 100,
+                            "unit": "fL"
+                        }
+                    }
+                ],
+                "note": [
+                    {
+                        "text": "high"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "https://example.com/base/Observation/mch",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "mch",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "28539-5",
+                            "display": "MCH"
+                        }
+                    ],
+                    "text": "MCH"
+                },
+                "subject": {
+                    "display": "Caroline Bini",
+                    "reference": "Patient/c3921b73-3981-4bdc-9154-a42d1526365d"
+                },
+                "valueQuantity": {
+                    "value": 40,
+                    "unit": "pg"
+                },
+                "referenceRange": [
+                    {
+                        "low": {
+                            "value": 27,
+                            "unit": "pg"
+                        },
+                        "high": {
+                            "value": 34,
+                            "unit": "pg"
+                        }
+                    }
+                ],
+                "note": [
+                    {
+                        "text": "Too high"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "https://example.com/base/Observation/mchc",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "mchc",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "47279-5",
+                            "display": "MCHC"
+                        }
+                    ],
+                    "text": "MCHC"
+                },
+                "subject": {
+                    "display": "Caroline Bini",
+                    "reference": "Patient/c3921b73-3981-4bdc-9154-a42d1526365d"
+                },
+                "valueQuantity": {
+                    "value": 40,
+                    "unit": "g/dL"
+                },
+                "referenceRange": [
+                    {
+                        "low": {
+                            "value": 31,
+                            "unit": "g/dL"
+                        },
+                        "high": {
+                            "value": 36,
+                            "unit": "g/dL"
+                        }
+                    }
+                ],
+                "note": [
+                    {
+                        "text": "Too high"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "https://example.com/base/Observation/plt",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "plt",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "26515-7",
+                            "display": "PLT"
+                        }
+                    ],
+                    "text": "PLT"
+                },
+                "subject": {
+                    "display": "Caroline Bini",
+                    "reference": "Patient/c3921b73-3981-4bdc-9154-a42d1526365d"
+                },
+                "valueQuantity": {
+                    "value": 60,
+                    "unit": "x10^3/ul"
+                },
+                "referenceRange": [
+                    {
+                        "low": {
+                            "value": 150,
+                            "unit": "x10^3/ul"
+                        },
+                        "high": {
+                            "value": 450,
+                            "unit": "x10^3/ul"
+                        }
+                    }
+                ],
+                "note": [
+                    {
+                        "text": "Too low"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "https://example.com/base/Observation/rdw-sd",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "rdw-sd",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "21000-5SD",
+                            "display": "RDW-SD"
+                        }
+                    ],
+                    "text": "RDW-SD"
+                },
+                "subject": {
+                    "display": "Caroline Bini",
+                    "reference": "Patient/c3921b73-3981-4bdc-9154-a42d1526365d"
+                },
+                "valueQuantity": {
+                    "value": 50,
+                    "unit": "fL"
+                },
+                "referenceRange": [
+                    {
+                        "low": {
+                            "value": 39,
+                            "unit": "fL"
+                        },
+                        "high": {
+                            "value": 46,
+                            "unit": "fL"
+                        }
+                    }
+                ],
+                "note": [
+                    {
+                        "text": "Too high"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "https://example.com/base/Observation/rdw-cv",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "rdw-cv",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "21000-5CV",
+                            "display": "RDW-CV"
+                        }
+                    ],
+                    "text": "RDW-CV"
+                },
+                "subject": {
+                    "display": "Caroline Bini",
+                    "reference": "Patient/c3921b73-3981-4bdc-9154-a42d1526365d"
+                },
+                "valueQuantity": {
+                    "value": 17,
+                    "unit": "%"
+                },
+                "referenceRange": [
+                    {
+                        "low": {
+                            "value": 11,
+                            "unit": "%"
+                        },
+                        "high": {
+                            "value": 15,
+                            "unit": "%"
+                        }
+                    }
+                ],
+                "note": [
+                    {
+                        "text": "Too high"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "https://example.com/base/Observation/mpv",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "mpv",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "32623-1",
+                            "display": "MPV"
+                        }
+                    ],
+                    "text": "MPV"
+                },
+                "subject": {
+                    "display": "Caroline Bini",
+                    "reference": "Patient/c3921b73-3981-4bdc-9154-a42d1526365d"
+                },
+                "valueQuantity": {
+                    "value": 6,
+                    "unit": "fL"
+                },
+                "referenceRange": [
+                    {
+                        "low": {
+                            "value": 7.4,
+                            "unit": "fL"
+                        },
+                        "high": {
+                            "value": 10.4,
+                            "unit": "fL"
+                        }
+                    }
+                ],
+                "note": [
+                    {
+                        "text": "Too low"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "https://example.com/base/Observation/neutrophils",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "neutrophils",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "26511-6",
+                            "display": "Neutrophils"
+                        }
+                    ],
+                    "text": "Neutrophils"
+                },
+                "subject": {
+                    "display": "Caroline Bini",
+                    "reference": "Patient/c3921b73-3981-4bdc-9154-a42d1526365d"
+                },
+                "valueQuantity": {
+                    "value": 5,
+                    "unit": "x10^3 /ul"
+                },
+                "referenceRange": [
+                    {
+                        "low": {
+                            "value": 1.7,
+                            "unit": "x10^3 /ul"
+                        },
+                        "high": {
+                            "value": 7.5,
+                            "unit": "x10^3 /ul"
+                        }
+                    }
+                ],
+                "note": [
+                    {
+                        "text": "Within limits"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "https://example.com/base/Observation/lymphocytes",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "lymphocytes",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "26478-8",
+                            "display": "Lymphocytes"
+                        }
+                    ],
+                    "text": "Lymphocytes"
+                },
+                "subject": {
+                    "display": "Caroline Bini",
+                    "reference": "Patient/c3921b73-3981-4bdc-9154-a42d1526365d"
+                },
+                "valueQuantity": {
+                    "value": 10,
+                    "unit": "x10^3/ul"
+                },
+                "referenceRange": [
+                    {
+                        "low": {
+                            "value": 1.5,
+                            "unit": "x10^3/ul"
+                        },
+                        "high": {
+                            "value": 4,
+                            "unit": "x10^3/ul"
+                        }
+                    }
+                ],
+                "note": [
+                    {
+                        "text": "Far exceeding limit"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "https://example.com/base/Observation/monocytes",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "monocytes",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "26485-3",
+                            "display": "Monocytes"
+                        }
+                    ],
+                    "text": "Monocytes"
+                },
+                "subject": {
+                    "display": "Caroline Bini",
+                    "reference": "Patient/c3921b73-3981-4bdc-9154-a42d1526365d"
+                },
+                "valueQuantity": {
+                    "value": 0.3,
+                    "unit": "x10^3 /ul"
+                },
+                "referenceRange": [
+                    {
+                        "low": {
+                            "value": 0.1,
+                            "unit": "x10^3 /ul"
+                        },
+                        "high": {
+                            "value": 1,
+                            "unit": "x10^3 /ul"
+                        }
+                    }
+                ],
+                "note": [
+                    {
+                        "text": "Within limits"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "https://example.com/base/Observation/eosinophils",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "eosinophils",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "26450-7",
+                            "display": "Eosinophils"
+                        }
+                    ],
+                    "text": "Eosinophils"
+                },
+                "subject": {
+                    "display": "Caroline Bini",
+                    "reference": "Patient/c3921b73-3981-4bdc-9154-a42d1526365d"
+                },
+                "valueQuantity": {
+                    "value": 0.02,
+                    "unit": "x10^3/ul"
+                },
+                "referenceRange": [
+                    {
+                        "low": {
+                            "value": 0.02,
+                            "unit": "x10^3/ul"
+                        },
+                        "high": {
+                            "value": 0.6,
+                            "unit": "x10^3/ul"
+                        }
+                    }
+                ],
+                "note": [
+                    {
+                        "text": "Within limits"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "https://example.com/base/Observation/basophils",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "basophils",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "30180-4",
+                            "display": "Basophils"
+                        }
+                    ],
+                    "text": "Basophils"
+                },
+                "subject": {
+                    "display": "Caroline Bini",
+                    "reference": "Patient/c3921b73-3981-4bdc-9154-a42d1526365d"
+                },
+                "valueQuantity": {
+                    "value": 0.01,
+                    "unit": "x10^3/ul"
+                },
+                "referenceRange": [
+                    {
+                        "low": {
+                            "value": 0.01,
+                            "unit": "x10^3/ul"
+                        },
+                        "high": {
+                            "value": 0.1,
+                            "unit": "x10^3/ul"
+                        }
+                    }
+                ],
+                "note": [
+                    {
+                        "text": "Within limits"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "https://example.com/base/Observation/ig",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "ig",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "34165-1",
+                            "display": "IG"
+                        }
+                    ],
+                    "text": "IG"
+                },
+                "subject": {
+                    "display": "Caroline Bini",
+                    "reference": "Patient/c3921b73-3981-4bdc-9154-a42d1526365d"
+                },
+                "valueQuantity": {
+                    "value": 0,
+                    "unit": "x10^3/ul"
+                }
+            }
+        }
+    ]
+}
