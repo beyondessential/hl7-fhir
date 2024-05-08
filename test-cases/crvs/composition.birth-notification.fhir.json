@@ -2,7 +2,7 @@
   "resourceType": "Bundle",
   "type": "document",
   "meta": {
-    "lastUpdated": "2012-04-23T18:25:43.511Z"
+    "lastUpdated": "2024-05-10T18:25:43.511Z"
   },
   "entry": [
     {
@@ -22,10 +22,10 @@
         "subject": {
           "reference": "Patient/f3e2fec5-b77c-42da-a282-11548be59be6"
         },
-        "date": "2012-04-23T18:25:43.511Z",
+        "date": "2024-05-10T18:25:43.511Z",
         "author": [
           {
-            "reference": "Practitioner/xyz"
+            "reference": "Practitioner/7afb1d39-75fe-4d10-b26d-aa397fd72a80"
           }
         ],
         "title": "Birth Notification",
@@ -146,7 +146,7 @@
         "resourceType": "Patient",
         "id": "f3e2fec5-b77c-42da-a282-11548be59be6",
         "meta": {
-          "lastUpdated": "2023-09-05T06:53:11Z"
+          "lastUpdated": "2024-05-10T06:53:11Z"
         },
         "extension": [],
         "identifier": [
