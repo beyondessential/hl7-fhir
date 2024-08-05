@@ -1,0 +1,16 @@
+{
+  "resourceType": "Bundle",
+  "id": "8d8f7e35-1844-49a0-b7b7-87ec3740f7df",
+  "type": "searchset",
+  "timestamp": "2024-08-05T05:49:12Z",
+  "total": 3,
+  "link": [
+    {
+      "relation": "self",
+      "url": "https://{tamanu-central}/v1/integration/fhir/mat/ServiceRequest?_lastUpdated=gt2024-03-21T20%3A59%3A35Z&category=http%3A%2F%2Fsnomed.info%2Fsct%7C363679005"
+    }
+  ],
+  "entry": [
+    // List of FHIR resources
+  ]
+}
