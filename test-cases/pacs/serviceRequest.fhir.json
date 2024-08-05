@@ -1,0 +1,49 @@
+{
+  "resourceType": "ServiceRequest",
+  "id": "00a2c05b-f980-48a8-aec0-3d4fe0122f324",
+  "identifier": [
+    {
+      "system": "http://data-dictionary.tamanu.org/tamanu-mrid-imagingrequest.html",
+      "value": "VRTDCN"
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "363679005"
+        }
+      ]
+    }
+  ],
+  "subject": {
+    "reference": "Patient/2472f1e5-2965-4272-babf-86bc60800cac",
+    "display": "John Purcey"
+  },
+  "status": "active",
+  "priority": "routine",
+  "code": {
+    "text": "CT Scan"
+  },
+  "orderDetail": [
+    {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "36255-8",
+          "display": "CT Sinuses W contrast IV"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "24697-5",
+          "display": "CT Facial bones W contrast IV"
+        }
+      ]
+    }
+  ]
+}

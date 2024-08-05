@@ -1,0 +1,13 @@
+{
+  "resourceType": "ImagingStudy",
+  "id": "1254f1a7-a8fb-40be-9576-3cfcda696836",
+  "basedOn": [
+    {
+      "identifier": {
+        "value": "<id>",
+        "system": "http://data-dictionary.tamanu-fiji.org/tamanu-id-imagingrequest.html"
+      }
+    }
+  ],
+  "status": "cancelled"
+}

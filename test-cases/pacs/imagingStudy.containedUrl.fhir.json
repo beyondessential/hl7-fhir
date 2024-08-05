@@ -1,0 +1,42 @@
+{
+  "resourceType": "ImagingStudy",
+  "id": "1254f1a7-a8fb-40be-9576-3cfcda696836",
+  "basedOn": [
+    {
+      "identifier": {
+        "value": "urn:uuid:00a2c05b-f980-48a8-aec0-3d4fe0122f324",
+        "system": "urn:ietf:rfc:3986",
+        "type": "ServiceRequest"
+      }
+    }
+  ],
+  "status": "final",
+  "note": [
+    {
+      "text": "The clinician has discovered a buildup of brain fluid within the circumference of the right ocular cavity."
+    }
+  ],
+  "contained": [
+    {
+      "resourceType": "Endpoint",
+      "status": "active",
+      "address": "<link-to-image-results>",
+      "connectionType": {
+        "code": "dicom-wado-rs",
+        "display": "DICOM WADO-RS"
+      },
+      "payloadType": [
+        {
+          "code": "none",
+          "display": "None"
+        }
+      ]
+    }
+  ],
+  "identifier": [
+    {
+      "system": "http://data-dictionary.tamanu.org/<3rd-party-application-identifier>.html",
+      "value": "ABCD1234"
+    }
+  ]
+}
