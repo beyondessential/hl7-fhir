@@ -1,0 +1,68 @@
+{
+    "resourceType": "Patient",
+    "id": "592a0273-ad6b-4d1e-acbf-0076a8011be8",
+    "active": true,
+    "identifier": [
+        {
+            "use": "usual", 
+            "value": "UTOE353558", // this for backward compatibility and will soon be deprecated
+            "assigner": "VRS",
+            "system": "http://data-dictionary.tamanu-fiji.org/application-reference-number.html"
+        },
+        {
+            "use": "official", 
+            "value": "246801357", // this for Fiji ASPEN
+            "assigner": "National Health Number",
+            "system": "http://data-dictionary.tamanu-fiji.org/national-health-number.html"
+        },
+        {
+            "use": "secondary", 
+            "value": "UTOE353558",
+            "assigner": "Tamanu",
+            "system": "http://tamanu.io/data-dictionary/tamanu-mrid-patient.html"
+        }
+    ],
+    "name": [
+        {
+            "use": "official",
+            "prefix": [
+                "Mr"
+            ],
+            "family": "Ashwood",
+            "given": [
+                "Ryan"
+            ]
+        }
+    ],
+    "birthDate": "1968-10-28",
+    "gender": "male",
+    "address": [
+        {
+            "type": "physical",
+            "use": "home",
+            "city": "Lautoka",
+            "line": []
+        }
+    ],
+    "telecom": [
+        {
+            "rank": 1,
+            "value": "7018569"
+        }
+    ],
+    "extension" : [
+      {
+        "url" : "http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity",
+        "valueCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "http://data-dictionary.tamanu-fiji.org/extensions/ethnic-group-code.html",
+              "code" : "43112",
+              "display" : "Fijian Indian"
+            }
+            
+          ]
+        }
+      }
+    ]
+}
