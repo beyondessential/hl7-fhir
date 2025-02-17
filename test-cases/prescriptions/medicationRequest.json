@@ -1,0 +1,51 @@
+{
+  "resourceType": "MedicationRequest",
+  "id": "592a0273-ad6b-4d1e-acbf-0076a8011be8",
+  "identifier": [
+    {
+      "use": "secondary",
+      "value": "2c193b12-03e8-44ff-8ee7-67d7229ba195",
+      "assigner": "Tamanu",
+      "system": "http://tamanu.io/data-dictionary/tamanu-mrid-medication-request.html"
+    }
+  ],
+  "status": "active",
+  "intent": "order",
+  "medication": {
+    "reference": {
+      "reference": "Medication/med0316",
+      "display": "prescribed medication"
+    }
+  },
+  "subject": {
+    "reference": "Patient/1a5deca5-6b4c-4d65-89b7-803f85ad4e64",
+    "display": "Jack Johnson"
+  },
+  "encounter": {
+    "reference": "Encounter/bdebdc5e-753e-45f5-8fd0-01c49bd88f9e"
+  },
+  "authoredOn": "2022-07-12T13:28:17+10:00",
+  "requester": {
+    "reference": "Practitioner/0735bc54-449f-498b-a919-8142deb6095c",
+    "display": "Doctor Doctor"
+  },
+  "reasonCode": [
+    {
+      "concept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "59621000",
+            "display": "Essential hypertension (disorder)"
+          }
+        ]
+      }
+    }
+  ],
+  "dosageInstruction": [
+    {
+      "sequence": 1,
+      "text": "Take one tablet daily as directed"
+    }
+  ]
+}
