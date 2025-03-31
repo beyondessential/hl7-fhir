@@ -12,10 +12,13 @@
   "status": "active",
   "intent": "order",
   "medication": {
-    "reference": {
-      "reference": "Medication/med0316",
-      "display": "prescribed medication"
-    }
+    "coding": [
+      {
+        "system": "http://tamanu.io/data-dictionary/tamanu-mrid-medication.html",
+        "code": "drug-acetazolamide250",
+        "display": "Acetazolamide 250mg Tablets"
+      }
+    ]
   },
   "subject": {
     "reference": "Patient/1a5deca5-6b4c-4d65-89b7-803f85ad4e64",
