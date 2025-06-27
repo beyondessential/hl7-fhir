@@ -1,0 +1,19 @@
+{
+  "code": {
+    "coding": [
+      {
+        "code": "100898-6",
+        "system": "http://loinc.org",
+        "display": "Lipid panel"
+      }
+    ]
+  },
+  "status": "cancelled",
+  "basedOn": [
+    {
+      "type": "ServiceRequest",
+      "reference": "ServiceRequest/3a194e17-36f0-4c91-9e9c-e61e89941f23"
+    }
+  ],
+  "resourceType": "DiagnosticReport"
+}
