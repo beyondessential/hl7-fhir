@@ -1,0 +1,289 @@
+{
+    "resourceType": "Bundle",
+    "id": "reproduction-fertility",
+    "type": "collection",
+    "entry": [
+        {
+            "fullUrl": "https://example.com/base/DiagnosticReport/d755775c-e02b-4975-841f-4b54742df172",
+            "resource": {
+                "resourceType": "DiagnosticReport",
+                "id": "d755775c-e02b-4975-841f-4b54742df172",
+                "status": "final",
+                "basedOn": [
+                    {
+                        "reference": "ServiceRequest/127"
+                    }
+                ],
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                                "code": "MB",
+                                "display": "Biochemistry"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "82359-1",
+                            "display": "Reproduction Fertility"
+                        }
+                    ],
+                    "text": "Reproduction Fertility"
+                },
+                "subject": {
+                    "reference": "Patient/bdb7a746-fd16-4c33-8eda-65833bbd993c",
+                    "display": "Margaret Ballard"
+                },
+                "issued": "2024-01-31T11:45:33+11:03",
+                "performer": [
+                    {
+                        "reference": "Pracitioner/f536898f-f2f0-4524-8ba8-201a3825a5fa",
+                        "display": "Doctor Hsu Ming En"
+                    }
+                ],
+                "result": [
+                    {
+                        "id": "estradiol-ii",
+                        "reference": "Observation/estradiol-ii"
+                    },
+                    {
+                        "id": "fsh",
+                        "reference": "Observation/fsh"
+                    },
+                    {
+                        "id": "hcg",
+                        "reference": "Observation/hcg"
+                    },
+                    {
+                        "id": "lh",
+                        "reference": "Observation/lh"
+                    },
+                    {
+                        "id": "prolactin",
+                        "reference": "Observation/prolactin"
+                    }
+                ],
+                "conclusion": "Female hormone results are within the normal range.",
+                "presentedForm": [
+                    {
+                        "data": "JVBERi0xLjQKMSAwIG9iago8PAovVGl0bGUgKP7/AFUAYgBlAHIpCi9DcmVhdG9yICj+/wB3AGsAaAB0AG0AbAB0AG8AcABkAGYAIAAwAC4AMQAyAC4ANikKL1Byb2R1Y2VyICj+/wBRAHQAIAA0AC4AOAAuADcpCi9DcmVhdGlvbkRhdGUgKEQ6MjAyNDAxMjkxODM0NDlaKQo+PgplbmRvYmoKMyAwIG9iago8PAovVHlwZSAvRXh0R1N0YXRlCi9TQSB0cnVlCi9TTSAwLjAyCi9jYSAxLjAKL0NBIDEuMAovQUlTIGZhbHNlCi9TTWFzayAvTm9uZT4+CmVuZG9iago0IDAgb2JqClsvUGF0dGVybiAvRGV2aWNlUkdCXQplbmRvYmoKNiAwIG9iago8PAovVHlwZSAvWE9iamVjdAovU3VidHlwZSAvSW1hZ2UKL1dpZHRoIDcyCi9IZWlnaHQgNzIKL0JpdHNQZXJDb21wb25lbnQgOAovQ29sb3JTcGFjZSAvRGV2aWNlR3JheQovTGVuZ3RoIDcgMCBSCi9GaWx0ZXIgL0ZsYXRlRGVjb2RlCj4+CnN0cmVhbQp4nO3MsQ0AMAgDsPx/NGVFYqzY7AOcAIfeN4/H4/F4PB6Px+PxTLUEuNQFU1RDCmVuZHN0cmVhbQplbmRvYmoKNyAwIG9iago0NgplbmRvYmoKOCAwIG9iago8PAovVHlwZSAvWE9iamVjdAovU3VidHlwZSAvSW1hZ2UKL1dpZHRoIDcyCi9IZWlnaHQgNzIKL0JpdHNQZXJDb21wb25lbnQgOAovQ29sb3JTcGFjZSAvRGV2aWNlUkdCCi9TTWFzayA2IDAgUgovTGVuZ3RoIDkgMCBSCi9GaWx0ZXIgL0ZsYXRlRGVjb2RlCj4+CnN0cmVhbQp4nO3Z30tTYRgH8JVmpUuG/RpOmaTDaOBcJJ",
+                        "title": "Full report attached",
+                        "contentType": "application/pdf"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "https://example.com/base/Observation/estradiol-ii",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "estradiol-ii",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2243-04-01T00:00:00.000Z",
+                            "display": "Estradiol II"
+                        }
+                    ],
+                    "text": "Estradiol II"
+                },
+                "subject": {
+                    "display": "Margaret Ballard",
+                    "reference": "Patient/bdb7a746-fd16-4c33-8eda-65833bbd993c"
+                },
+                "valueQuantity": {
+                    "value": 145,
+                    "unit": "pg/ml"
+                },
+                "referenceRange": [
+                    {
+                        "low": {
+                            "value": 93,
+                            "unit": "pg/ml"
+                        },
+                        "high": {
+                            "value": 575,
+                            "unit": "pg/ml"
+                        }
+                    }
+                ],
+                "note": [
+                    {
+                        "text": "Within limits"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "https://example.com/base/Observation/fsh",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "fsh",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "15067-2",
+                            "display": "FSH"
+                        }
+                    ],
+                    "text": "FSH"
+                },
+                "subject": {
+                    "display": "Margaret Ballard",
+                    "reference": "Patient/bdb7a746-fd16-4c33-8eda-65833bbd993c"
+                },
+                "valueQuantity": {
+                    "value": 18,
+                    "unit": "mIU/mL"
+                },
+                "referenceRange": [
+                    {
+                        "low": {
+                            "value": 6.3,
+                            "unit": "mIU/mL"
+                        },
+                        "high": {
+                            "value": 24,
+                            "unit": "mIU/mL"
+                        }
+                    }
+                ],
+                "note": [
+                    {
+                        "text": "Within limits"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "https://example.com/base/Observation/hcg",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "hcg",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2110-05-01T00:00:00.000Z",
+                            "display": "HCG"
+                        }
+                    ],
+                    "text": "HCG"
+                },
+                "subject": {
+                    "display": "Margaret Ballard",
+                    "reference": "Patient/bdb7a746-fd16-4c33-8eda-65833bbd993c"
+                },
+                "valueQuantity": {
+                    "value": 3,
+                    "unit": "mIU/mL"
+                },
+                "referenceRange": [
+                    {
+                        "low": {
+                            "value": 5,
+                            "unit": "mIU/mL"
+                        }
+                    }
+                ],
+                "note": [
+                    {
+                        "text": "Within limits"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "https://example.com/base/Observation/lh",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "lh",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "10501-5",
+                            "display": "LH"
+                        }
+                    ],
+                    "text": "LH"
+                },
+                "subject": {
+                    "display": "Margaret Ballard",
+                    "reference": "Patient/bdb7a746-fd16-4c33-8eda-65833bbd993c"
+                },
+                "valueQuantity": {
+                    "value": 50,
+                    "unit": "mIU/mL"
+                },
+                "referenceRange": [
+                    {
+                        "low": {
+                            "value": 9.6,
+                            "unit": "mIU/mL"
+                        },
+                        "high": {
+                            "value": 80,
+                            "unit": "mIU/mL"
+                        }
+                    }
+                ],
+                "note": [
+                    {
+                        "text": "Within limits"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "https://example.com/base/Observation/prolactin",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "prolactin",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "15081-3",
+                            "display": "Prolactin"
+                        }
+                    ],
+                    "text": "Prolactin"
+                },
+                "subject": {
+                    "display": "Margaret Ballard",
+                    "reference": "Patient/bdb7a746-fd16-4c33-8eda-65833bbd993c"
+                },
+                "valueQuantity": {
+                    "value": 12,
+                    "unit": "mIU/mL"
+                },
+                "referenceRange": [
+                    {
+                        "low": {
+                            "value": 25,
+                            "unit": "mIU/mL"
+                        }
+                    }
+                ],
+                "note": [
+                    {
+                        "text": "Within limits"
+                    }
+                ]
+            }
+        }
+    ]
+}
