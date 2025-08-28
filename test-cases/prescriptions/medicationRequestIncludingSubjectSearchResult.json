@@ -1,26 +1,26 @@
 {
   "resourceType": "Bundle",
-  "id": "7d500e99-1d02-45d4-a999-9f4a3e1e0b6d",
+  "id": "043ec3d8-cdef-4d94-90ee-576322071e6d",
   "type": "searchset",
-  "timestamp": "2025-08-28T15:21:42+10:00",
+  "timestamp": "2025-08-28T16:08:06+10:00",
   "total": 1,
   "link": [
     {
       "relation": "self",
-      "url": "http://localhost:3000/v1/integration/fhir/mat/MedicationRequest?_include=Patient%3Asubject&_lastUpdated=gt2025-08-28T04%3A59%3A35Z"
+      "url": "http://localhost:3000/v1/integration/fhir/mat/MedicationRequest?_include=Patient%3Asubject&_lastUpdated=gt2025-08-28T05%3A59%3A35Z"
     }
   ],
   "entry": [
     {
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "7c1b1711-ec19-40a0-80bd-9abc721a7793",
+        "id": "c6e5ad71-369e-4b3f-8d3b-306b8809733b",
         "meta": {
-          "lastUpdated": "2025-08-29T01:15:39+10:00"
+          "lastUpdated": "2025-08-29T02:08:00+10:00"
         },
         "identifier": [
           {
-            "value": "ea2b3de2-c7be-4c8c-aaba-ec154bd16187",
+            "value": "7db40298-5dee-47af-99c1-70e573dee635",
             "system": "http://data-dictionary.tamanu.org/tamanu-mrid-pharmacyorderprescription.html"
           }
         ],
@@ -28,7 +28,7 @@
         "intent": "order",
         "groupIdentifier": [
           {
-            "value": "59780c06-1aea-4cbf-b65f-b32ba9334506",
+            "value": "b7b2a012-3f22-43e5-a2a2-31372f487b3a",
             "system": "http://data-dictionary.tamanu.org/tamanu-mrid-pharmacyorder.html"
           }
         ],
@@ -58,7 +58,7 @@
             }
           ]
         },
-        "authoredOn": "2025-08-28T05:15:39.321Z",
+        "authoredOn": "2025-08-28T06:08:00.266Z",
         "requester": {
           "type": "Organization",
           "display": "facility-1",
@@ -108,7 +108,8 @@
           ]
         },
         "dispenseRequest": {
-          "quantity": 1
+          "quantity": 1,
+          "numberOfRepeatsAllowed": 2
         }
       },
       "search": {
