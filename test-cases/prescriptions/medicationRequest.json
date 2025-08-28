@@ -1,54 +1,99 @@
 {
   "resourceType": "MedicationRequest",
-  "id": "592a0273-ad6b-4d1e-acbf-0076a8011be8",
+  "id": "7c1b1711-ec19-40a0-80bd-9abc721a7793",
+  "meta": {
+    "lastUpdated": "2025-08-29T01:15:39+10:00"
+  },
   "identifier": [
     {
-      "use": "secondary",
-      "value": "2c193b12-03e8-44ff-8ee7-67d7229ba195",
-      "assigner": "Tamanu",
-      "system": "http://tamanu.io/data-dictionary/tamanu-mrid-medication-request.html"
+      "value": "ea2b3de2-c7be-4c8c-aaba-ec154bd16187",
+      "system": "http://data-dictionary.tamanu.org/tamanu-mrid-pharmacyorderprescription.html"
     }
   ],
   "status": "active",
   "intent": "order",
-  "medication": {
+  "groupIdentifier": [
+    {
+      "value": "59780c06-1aea-4cbf-b65f-b32ba9334506",
+      "system": "http://data-dictionary.tamanu.org/tamanu-mrid-pharmacyorder.html"
+    }
+  ],
+  "category": {
     "coding": [
       {
-        "system": "http://tamanu.io/data-dictionary/tamanu-mrid-medication.html",
-        "code": "drug-acetazolamide250",
-        "display": "Acetazolamide 250mg Tablets"
+        "code": "discharge",
+        "system": "https://hl7.org/fhir/R4B/codesystem-medicationrequest-category.html"
       }
     ]
   },
   "subject": {
-    "reference": "Patient/1a5deca5-6b4c-4d65-89b7-803f85ad4e64",
-    "display": "Jack Johnson"
+    "type": "Patient",
+    "display": "Roy Antonini",
+    "reference": "Patient/c38b9237-f8fd-4d4d-b8b1-f572b842fee3"
   },
   "encounter": {
-    "reference": "Encounter/bdebdc5e-753e-45f5-8fd0-01c49bd88f9e"
+    "type": "Encounter",
+    "reference": "Encounter/31148495-e91f-4f3b-9434-9c7a44011d7c"
   },
-  "authoredOn": "2022-07-12T13:28:17+10:00",
-  "requester": {
-    "reference": "Practitioner/0735bc54-449f-498b-a919-8142deb6095c",
-    "display": "Doctor Doctor"
-  },
-  "reasonCode": [
-    {
-      "concept": {
-        "coding": [
-          {
-            "system": "http://snomed.info/sct",
-            "code": "59621000",
-            "display": "Essential hypertension (disorder)"
-          }
-        ]
+  "medication": {
+    "coding": [
+      {
+        "code": "allopurinol100",
+        "system": "http://data-dictionary.tamanu.org/tamanu-msupplyuniveralcodes.html",
+        "display": "Allopurinol 100mg Tablets"
       }
-    }
-  ],
-  "dosageInstruction": [
-    {
-      "sequence": 1,
-      "text": "Take one tablet daily as directed"
-    }
-  ]
+    ]
+  },
+  "authoredOn": "2025-08-28T05:15:39.321Z",
+  "requester": {
+    "type": "Organization",
+    "display": "facility-1",
+    "reference": "Organization/0648fecf-7900-4d28-88ea-19b7f14d9524"
+  },
+  "recorder": {
+    "type": "Practitioner",
+    "display": "Initial Admin",
+    "reference": "Practitioner/b3ba9674-672a-4229-8ea7-7bda1217d70b"
+  },
+  "dosageInstruction": {
+    "text": "3 Cap - Three times daily",
+    "route": {
+      "coding": [
+        {
+          "code": "oral",
+          "system": "http://data-dictionary.tamanu.org/tamanu-medicationroutecodes.html"
+        }
+      ]
+    },
+    "timing": {
+      "repeat": {
+        "period": 1,
+        "frequency": 3,
+        "timeOfDay": ["06:00:00", "12:00:00", "18:00:00"],
+        "periodUnit": "d"
+      }
+    },
+    "doseAndRate": [
+      {
+        "dose": {
+          "doseQuantity": {
+            "unit": "Capsule",
+            "value": 3
+          }
+        },
+        "type": {
+          "coding": [
+            {
+              "code": "ordered",
+              "system": "https://hl7.org/fhir/R4B/codesystem-dose-rate-type.html",
+              "display": "Ordered"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "dispenseRequest": {
+    "quantity": 1
+  }
 }

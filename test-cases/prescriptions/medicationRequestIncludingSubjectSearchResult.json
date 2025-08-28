@@ -1,0 +1,170 @@
+{
+  "resourceType": "Bundle",
+  "id": "7d500e99-1d02-45d4-a999-9f4a3e1e0b6d",
+  "type": "searchset",
+  "timestamp": "2025-08-28T15:21:42+10:00",
+  "total": 1,
+  "link": [
+    {
+      "relation": "self",
+      "url": "http://localhost:3000/v1/integration/fhir/mat/MedicationRequest?_include=Patient%3Asubject&_lastUpdated=gt2025-08-28T04%3A59%3A35Z"
+    }
+  ],
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "7c1b1711-ec19-40a0-80bd-9abc721a7793",
+        "meta": {
+          "lastUpdated": "2025-08-29T01:15:39+10:00"
+        },
+        "identifier": [
+          {
+            "value": "ea2b3de2-c7be-4c8c-aaba-ec154bd16187",
+            "system": "http://data-dictionary.tamanu.org/tamanu-mrid-pharmacyorderprescription.html"
+          }
+        ],
+        "status": "active",
+        "intent": "order",
+        "groupIdentifier": [
+          {
+            "value": "59780c06-1aea-4cbf-b65f-b32ba9334506",
+            "system": "http://data-dictionary.tamanu.org/tamanu-mrid-pharmacyorder.html"
+          }
+        ],
+        "category": {
+          "coding": [
+            {
+              "code": "discharge",
+              "system": "https://hl7.org/fhir/R4B/codesystem-medicationrequest-category.html"
+            }
+          ]
+        },
+        "subject": {
+          "type": "Patient",
+          "display": "Roy Antonini",
+          "reference": "Patient/c38b9237-f8fd-4d4d-b8b1-f572b842fee3"
+        },
+        "encounter": {
+          "type": "Encounter",
+          "reference": "Encounter/31148495-e91f-4f3b-9434-9c7a44011d7c"
+        },
+        "medication": {
+          "coding": [
+            {
+              "code": "allopurinol100",
+              "system": "http://data-dictionary.tamanu.org/tamanu-msupplyuniveralcodes.html",
+              "display": "Allopurinol 100mg Tablets"
+            }
+          ]
+        },
+        "authoredOn": "2025-08-28T05:15:39.321Z",
+        "requester": {
+          "type": "Organization",
+          "display": "facility-1",
+          "reference": "Organization/0648fecf-7900-4d28-88ea-19b7f14d9524"
+        },
+        "recorder": {
+          "type": "Practitioner",
+          "display": "Initial Admin",
+          "reference": "Practitioner/b3ba9674-672a-4229-8ea7-7bda1217d70b"
+        },
+        "dosageInstruction": {
+          "text": "3 Cap - Three times daily",
+          "route": {
+            "coding": [
+              {
+                "code": "oral",
+                "system": "http://data-dictionary.tamanu.org/tamanu-medicationroutecodes.html"
+              }
+            ]
+          },
+          "timing": {
+            "repeat": {
+              "period": 1,
+              "frequency": 3,
+              "timeOfDay": ["06:00:00", "12:00:00", "18:00:00"],
+              "periodUnit": "d"
+            }
+          },
+          "doseAndRate": [
+            {
+              "dose": {
+                "doseQuantity": {
+                  "unit": "Capsule",
+                  "value": 3
+                }
+              },
+              "type": {
+                "coding": [
+                  {
+                    "code": "ordered",
+                    "system": "https://hl7.org/fhir/R4B/codesystem-dose-rate-type.html",
+                    "display": "Ordered"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "dispenseRequest": {
+          "quantity": 1
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "c38b9237-f8fd-4d4d-b8b1-f572b842fee3",
+        "meta": {
+          "lastUpdated": "2025-06-23T10:32:57+10:00"
+        },
+        "extension": [],
+        "identifier": [
+          {
+            "use": "usual",
+            "value": "ZLTH247813",
+            "system": "http://tamanu.io/data-dictionary/application-reference-number.html",
+            "assigner": {
+              "display": "Tamanu"
+            }
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "given": ["Roy", "Ernest"],
+            "family": "Antonini",
+            "prefix": [],
+            "suffix": []
+          },
+          {
+            "use": "nickname",
+            "text": "Joe",
+            "given": [],
+            "prefix": [],
+            "suffix": []
+          }
+        ],
+        "telecom": [],
+        "gender": "male",
+        "birthDate": "1981-10-27",
+        "address": [
+          {
+            "use": "home",
+            "line": [],
+            "type": "physical"
+          }
+        ],
+        "link": []
+      },
+      "search": {
+        "mode": "include"
+      }
+    }
+  ]
+}
