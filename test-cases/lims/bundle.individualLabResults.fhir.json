@@ -1,0 +1,146 @@
+{
+  "resourceType": "Bundle",
+  "id": "101",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "status": "final",
+        "basedOn": [
+          {
+            "type": "ServiceRequest",
+            "reference": "ServiceRequest/3c82dcdb-6327-4990-b3ac-cc091041e2d1"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "42191-7",
+              "display": "Hepatitis Panel"
+            }
+          ]
+        },
+        "result": [
+          {
+            "reference": "Observation/r1"
+          },
+          {
+            "reference": "Observation/r2"
+          },
+          {
+            "reference": "Observation/r3"
+          },
+          {
+            "reference": "Observation/r4"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "r1",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "718-7",
+              "display": "Hemoglobin [Mass/volume] in Blood"
+            }
+          ],
+          "text": "Haemoglobin"
+        },
+        "valueQuantity": {
+          "value": 176,
+          "unit": "g/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "g/L"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 135,
+              "unit": "g/L",
+              "system": "http://unitsofmeasure.org",
+              "code": "g/L"
+            },
+            "high": {
+              "value": 180,
+              "unit": "g/L",
+              "system": "http://unitsofmeasure.org",
+              "code": "g/L"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "r2",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "789-8",
+              "display": "Erythrocytes [#/volume] in Blood by Automated count"
+            }
+          ],
+          "text": "Red Cell Count"
+        },
+        "valueQuantity": {
+          "value": 5.9,
+          "unit": "x10*12/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "10*12/L"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "r3",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "789-8",
+              "display": "Erythrocytes [#/volume] in Blood by Automated count"
+            }
+          ]
+        },
+        "status": "final",
+        "valueString": "Amoxy + clavulanate: R<br/>Ceftriaxone: S<br/>Gentamicin: S<br/>Ciprofloxacin: S<br/>Nitrofurantoin: S<br/>Trimethoprim-Sulfamethoxazole: S<br/>Tobramycin: S<br/>Meropenem: S<br/>Ceftazidime: R<br/>Piperacillin-tazobactam: R<br/>Amikacin: R<br/>Chloramphenicol: R"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "r4",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "789-8",
+              "display": "Erythrocytes [#/volume] in Blood by Automated count"
+            }
+          ]
+        },
+        "status": "final",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1234",
+              "display": "Lots of germs"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
