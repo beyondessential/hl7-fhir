@@ -21,20 +21,6 @@
             }
           ]
         },
-        "result": [
-          {
-            "reference": "Observation/r1"
-          },
-          {
-            "reference": "Observation/r2"
-          },
-          {
-            "reference": "Observation/r3"
-          },
-          {
-            "reference": "Observation/r4"
-          }
-        ],
         "presentedForm": [
           {
             "contentType": "application/pdf",
@@ -52,8 +38,12 @@
     {
       "resource": {
         "resourceType": "Observation",
-        "id": "r1",
-        "status": "final",
+        "basedOn": [
+          {
+            "type": "ServiceRequest",
+            "reference": "ServiceRequest/3c82dcdb-6327-4990-b3ac-cc091041e2d1"
+          }
+        ],
         "code": {
           "coding": [
             {
@@ -64,6 +54,7 @@
           ],
           "text": "Haemoglobin"
         },
+        "status": "final",
         "valueQuantity": {
           "value": 176,
           "unit": "g/L",
@@ -95,8 +86,12 @@
     {
       "resource": {
         "resourceType": "Observation",
-        "id": "r2",
-        "status": "final",
+        "basedOn": [
+          {
+            "type": "ServiceRequest",
+            "reference": "ServiceRequest/3c82dcdb-6327-4990-b3ac-cc091041e2d1"
+          }
+        ],
         "code": {
           "coding": [
             {
@@ -107,6 +102,7 @@
           ],
           "text": "Red Cell Count"
         },
+        "status": "final",
         "valueQuantity": {
           "value": 5.9,
           "unit": "x10*12/L",
@@ -122,7 +118,12 @@
     {
       "resource": {
         "resourceType": "Observation",
-        "id": "r3",
+        "basedOn": [
+          {
+            "type": "ServiceRequest",
+            "reference": "ServiceRequest/3c82dcdb-6327-4990-b3ac-cc091041e2d1"
+          }
+        ],
         "code": {
           "coding": [
             {
@@ -143,7 +144,12 @@
     {
       "resource": {
         "resourceType": "Observation",
-        "id": "r4",
+        "basedOn": [
+          {
+            "type": "ServiceRequest",
+            "reference": "ServiceRequest/3c82dcdb-6327-4990-b3ac-cc091041e2d1"
+          }
+        ],
         "code": {
           "coding": [
             {
