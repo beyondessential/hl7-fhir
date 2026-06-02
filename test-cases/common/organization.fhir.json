@@ -1,0 +1,14 @@
+{
+  "resourceType": "Organization",
+  "id": "a08400fc-9b50-4a97-9e23-90c23ba1c2d8",
+  "meta": {
+    "lastUpdated": "2025-10-07T08:50:58+13:00"
+  },
+  "identifier": [
+    {
+      "value": "DemoLan"
+    }
+  ],
+  "name": "Demo Lan",
+  "active": true
+}
