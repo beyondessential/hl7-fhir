@@ -1,0 +1,25 @@
+{
+  "resourceType": "DiagnosticReport",
+  "status": "registered",
+  "basedOn": [
+    {
+      "type": "ServiceRequest",
+      "reference": "ServiceRequest/3437fa9e-2ea0-481f-8538-b293d2da82a1"
+    }
+  ],
+  "code": {
+    "text": "Cholesterol Panel",
+    "coding": [
+      {
+        "code": "CholesterolPanel",
+        "system": "https://www.senaite.com/profileCodes.html",
+        "display": "Cholesterol Panel"
+      },
+      {
+        "code": "B0420",
+        "system": "http://loinc.org",
+        "display": "Cholesterol Panel"
+      }
+    ]
+  }
+}
