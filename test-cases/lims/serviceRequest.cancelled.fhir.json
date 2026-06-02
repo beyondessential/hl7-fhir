@@ -1,0 +1,58 @@
+{
+    "resourceType": "ServiceRequest",
+    "id": "00a2c05b-f980-48a8-aec0-3d4fe078a824",
+    "identifier": [
+        {
+            "system": "http://data-dictionary.tamanu-fiji.org/tamanu-mrid-labrequest.html",
+            "value": "VTBZWN"
+        }
+    ],
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "108252007",
+                    "display": "Laboratory procedure"
+                }
+            ]
+        }
+    ],
+    "subject": {
+        "reference": "Patient/1a5deca5-6b4c-4d65-89b7-803f85ad4e64",
+        "display": "Jack Johnson"
+    },
+    "status": "revoked",
+    "specimen": [
+        {
+            "reference": "Specimen/0b21b9cc-31a4-11ee-be56-0242ac120002"
+        }
+    ],
+    "requester": {
+        "reference": "Practitioner/0735bc54-449f-498b-a919-8142deb6095c",
+        "display": "Doctor Doctor"
+    },
+    "code": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "B0030",
+                "display": "Chem 7"
+            }
+        ]
+    },
+    "orderDetail": [
+        {
+            "coding": [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "B00010",
+                    "display": "^Sodium"
+                }
+            ]
+        }
+    ],
+    "encounter": {
+        "reference": "Encounter/bdebdc5e-753e-45f5-8fd0-01c49bd88f9e"
+    }
+}
