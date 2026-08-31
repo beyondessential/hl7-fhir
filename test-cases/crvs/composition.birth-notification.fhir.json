@@ -1,0 +1,206 @@
+{
+  "resourceType": "Bundle",
+  "type": "document",
+  "meta": {
+    "lastUpdated": "2024-05-10T18:25:43.511Z"
+  },
+  "entry": [
+    {
+      "resource": {
+        "id": "920c372e-52cc-445a-918e-93e4f146e443",
+        "resourceType": "Composition",
+        "status": "final",
+        "type": {
+          "coding": [
+            {
+              "system": "http://opencrvs.org/specs/types",
+              "code": "birth-notification"
+            }
+          ],
+          "text": "Birth Notification"
+        },
+        "subject": {
+          "reference": "Patient/f3e2fec5-b77c-42da-a282-11548be59be6"
+        },
+        "date": "2024-05-10T18:25:43.511Z",
+        "author": [
+          {
+            "reference": "Practitioner/7afb1d39-75fe-4d10-b26d-aa397fd72a80"
+          }
+        ],
+        "title": "Birth Notification",
+        "section": [
+          {
+            "title": "Mother's details",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://opencrvs.org/specs/sections",
+                  "code": "mother-details"
+                }
+              ],
+              "text": "Mother's details"
+            },
+            "entry": [
+              {
+                "reference": "Patient/fd4c5a52-4d65-4cbb-b3d2-cc999216e584"
+              }
+            ]
+          },
+          {
+            "title": "Child details",
+            "code": [
+              {
+                "coding": {
+                  "system": "http://opencrvs.org/specs/sections",
+                  "code": "child-details"
+                },
+                "text": "Child details"
+              }
+            ],
+            "text": "Details of Newly Born John Purcey",
+            "entry": [
+              {
+                "reference": "Patient/f3e2fec5-b77c-42da-a282-11548be59be6"
+              }
+            ]
+          },
+          {
+            "title": "Location",
+            "code": [
+              {
+                "coding": {
+                  "system": "http://loinc.org",
+                  "code": "80412-0"
+                },
+                "text": "Encounter location"
+              }
+            ],
+            "text": "Nadi",
+            "entry": [
+              {
+                "reference": "b991e26c-5049-4012-ad01-3fa1c79f8608"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "fd4c5a52-4d65-4cbb-b3d2-cc999216e584",
+        "meta": {
+          "lastUpdated": "2024-03-07T03:45:36Z"
+        },
+        "identifier": [
+          {
+            "use": "usual",
+            "value": "KAFH986392",
+            "system": "http://tamanu.io/data-dictionary/tamanu-mrid-patient.html"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "given": [
+              "Margaret"
+            ],
+            "family": "Ballard",
+            "prefix": [
+              "Ms"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "rank": 1,
+            "value": "8041123",
+            "system": "phone"
+          }
+        ],
+        "gender": "female",
+        "birthDate": "2000-03-15",
+        "address": [
+          {
+            "use": "home",
+            "line": [],
+            "type": "physical"
+          }
+        ],
+        "link": [
+          {
+            "type": "replaces",
+            "other": {
+              "type": "Patient",
+              "display": "DGQU631911",
+              "reference": "Patient/adc4a146-77d6-44b6-9550-cd6c37cf78ea"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "f3e2fec5-b77c-42da-a282-11548be59be6",
+        "meta": {
+          "lastUpdated": "2024-05-10T06:53:11Z"
+        },
+        "extension": [],
+        "identifier": [
+          {
+            "use": "usual",
+            "value": "WVNF173345",
+            "system": "http://tamanu.io/data-dictionary/application-reference-number.html"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "given": [
+              "John"
+            ],
+            "family": "Purcey",
+            "prefix": [
+              "Mr"
+            ],
+            "suffix": []
+          }
+        ],
+        "telecom": [],
+        "gender": "male",
+        "birthDate": "2024-05-10",
+        "address": [
+          {
+            "use": "home",
+            "city": "Nadi",
+            "line": [],
+            "type": "physical"
+          }
+        ],
+        "link": []
+      }
+    },
+    {
+      "fullUrl": "b991e26c-5049-4012-ad01-3fa1c79f8608",
+      "resource": {
+        "resourceType": "Location",
+        "status": "active",
+        "mode": "instance",
+        "name": "Nadi",
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/ValueSet/location-physical-type",
+              "code": "area"
+            }
+          ],
+          "text": "Area"
+        }
+      }
+    }
+  ]
+}
