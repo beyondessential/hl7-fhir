@@ -1,0 +1,342 @@
+{
+    "resourceType": "Bundle",
+    "id": "hepatitis-panel",
+    "type": "collection",
+    "entry": [
+        {
+            "fullUrl": "https://example.com/base/DiagnosticReport/d972e853-ab31-402c-9d5f-8b2e50697271",
+            "resource": {
+                "resourceType": "DiagnosticReport",
+                "id": "d972e853-ab31-402c-9d5f-8b2e50697271",
+                "status": "final",
+                "basedOn": [
+                    {
+                        "reference": "ServiceRequest/124"
+                    }
+                ],
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                                "code": "SR",
+                                "display": "Serology"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "42191-7",
+                            "display": "Hepatitis Panel"
+                        }
+                    ],
+                    "text": "Hepatitis Panel"
+                },
+                "subject": {
+                    "reference": "Patient/387353e4-691c-4024-804a-fe45d819d6b6",
+                    "display": "Esther Milani"
+                },
+                "issued": "2024-01-28T11:45:33+11:00",
+                "performer": [
+                    {
+                        "reference": "Pracitioner/738cd66f-4385-43b4-8857-ab0d45fea4ff",
+                        "display": "Darla Rengulbai"
+                    }
+                ],
+                "result": [
+                    {
+                        "id": "anti-hbs",
+                        "reference": "Observation/anti-hbs"
+                    },
+                    {
+                        "id": "anti-hav-total",
+                        "reference": "Observation/anti-hav-total"
+                    },
+                    {
+                        "id": "anti-hbc-total-ii",
+                        "reference": "Observation/anti-hbc-total-ii"
+                    },
+                    {
+                        "id": "anti-hbe",
+                        "reference": "Observation/anti-hbe"
+                    },
+                    {
+                        "id": "hav-igm",
+                        "reference": "Observation/hav-igm"
+                    },
+                    {
+                        "id": "hbc-igm-ii",
+                        "reference": "Observation/hbc-igm-ii"
+                    },
+                    {
+                        "id": "hbe-ag",
+                        "reference": "Observation/hbe-ag"
+                    },
+                    {
+                        "id": "hbsag",
+                        "reference": "Observation/hbsag"
+                    }
+                ],
+                "conclusion": "Patient has a histroy of Hepatitis B infection",
+                "presentedForm": [
+                    {
+                        "data": "JVBERi0xLjQKMSAwIG9iago8PAovVGl0bGUgKP7/AFUAYgBlAHIpCi9DcmVhdG9yICj+/wB3AGsAaAB0AG0AbAB0AG8AcABkAGYAIAAwAC4AMQAyAC4ANikKL1Byb2R1Y2VyICj+/wBRAHQAIAA0AC4AOAAuADcpCi9DcmVhdGlvbkRhdGUgKEQ6MjAyNDAxMjkxODM0NDlaKQo+PgplbmRvYmoKMyAwIG9iago8PAovVHlwZSAvRXh0R1N0YXRlCi9TQSB0cnVlCi9TTSAwLjAyCi9jYSAxLjAKL0NBIDEuMAovQUlTIGZhbHNlCi9TTWFzayAvTm9uZT4+CmVuZG9iago0IDAgb2JqClsvUGF0dGVybiAvRGV2aWNlUkdCXQplbmRvYmoKNiAwIG9iago8PAovVHlwZSAvWE9iamVjdAovU3VidHlwZSAvSW1hZ2UKL1dpZHRoIDcyCi9IZWlnaHQgNzIKL0JpdHNQZXJDb21wb25lbnQgOAovQ29sb3JTcGFjZSAvRGV2aWNlR3JheQovTGVuZ3RoIDcgMCBSCi9GaWx0ZXIgL0ZsYXRlRGVjb2RlCj4+CnN0cmVhbQp4nO3MsQ0AMAgDsPx/NGVFYqzY7AOcAIfeN4/H4/F4PB6Px+PxTLUEuNQFU1RDCmVuZHN0cmVhbQplbmRvYmoKNyAwIG9iago0NgplbmRvYmoKOCAwIG9iago8PAovVHlwZSAvWE9iamVjdAovU3VidHlwZSAvSW1hZ2UKL1dpZHRoIDcyCi9IZWlnaHQgNzIKL0JpdHNQZXJDb21wb25lbnQgOAovQ29sb3JTcGFjZSAvRGV2aWNlUkdCCi9TTWFzayA2IDAgUgovTGVuZ3RoIDkgMCBSCi9GaWx0ZXIgL0ZsYXRlRGVjb2RlCj4+CnN0cmVhbQp4nO3Z30tTYRgH8JVmpUuG/RpOmaTDaOBcJJ",
+                        "title": "Full report attached",
+                        "contentType": "application/pdf"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "https://example.com/base/Observation/anti-hbs",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "anti-hbs",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "10900-9",
+                            "display": "Anti HBs"
+                        }
+                    ],
+                    "text": "Anti HBs"
+                },
+                "subject": {
+                    "display": "Esther Milani",
+                    "reference": "Patient/387353e4-691c-4024-804a-fe45d819d6b6"
+                },
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                            "code": "POS",
+                            "display": "Positive"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "fullUrl": "https://example.com/base/Observation/anti-hav-total",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "anti-hav-total",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "13951-9",
+                            "display": "Anti-Hav Total"
+                        }
+                    ],
+                    "text": "Anti-Hav Total"
+                },
+                "subject": {
+                    "display": "Esther Milani",
+                    "reference": "Patient/387353e4-691c-4024-804a-fe45d819d6b6"
+                },
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                            "code": "NEG",
+                            "display": "Negative"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "fullUrl": "https://example.com/base/Observation/anti-hbc-total-ii",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "anti-hbc-total-ii",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "13952-7",
+                            "display": "Anti-HBc Total II"
+                        }
+                    ],
+                    "text": "Anti-HBc Total II"
+                },
+                "subject": {
+                    "display": "Esther Milani",
+                    "reference": "Patient/387353e4-691c-4024-804a-fe45d819d6b6"
+                },
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                            "code": "POS",
+                            "display": "Positive"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "fullUrl": "https://example.com/base/Observation/anti-hbe",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "anti-hbe",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "13953-5",
+                            "display": "Anti-HBe"
+                        }
+                    ],
+                    "text": "Anti-HBe"
+                },
+                "subject": {
+                    "display": "Esther Milani",
+                    "reference": "Patient/387353e4-691c-4024-804a-fe45d819d6b6"
+                },
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                            "code": "POS",
+                            "display": "Positive"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "fullUrl": "https://example.com/base/Observation/hav-igm",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "hav-igm",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "13950-1",
+                            "display": "HAV IgM"
+                        }
+                    ],
+                    "text": "HAV IgM"
+                },
+                "subject": {
+                    "display": "Esther Milani",
+                    "reference": "Patient/387353e4-691c-4024-804a-fe45d819d6b6"
+                },
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                            "code": "NEG",
+                            "display": "Negative"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "fullUrl": "https://example.com/base/Observation/hbc-igm-ii",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "hbc-igm-ii",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "24113-3",
+                            "display": "HBc IgM II"
+                        }
+                    ],
+                    "text": "HBc IgM II"
+                },
+                "subject": {
+                    "display": "Esther Milani",
+                    "reference": "Patient/387353e4-691c-4024-804a-fe45d819d6b6"
+                },
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                            "code": "NEG",
+                            "display": "Negative"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "fullUrl": "https://example.com/base/Observation/hbe-ag",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "hbe-ag",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "13954-3",
+                            "display": "Hbe Ag"
+                        }
+                    ],
+                    "text": "Hbe Ag"
+                },
+                "subject": {
+                    "display": "Esther Milani",
+                    "reference": "Patient/387353e4-691c-4024-804a-fe45d819d6b6"
+                },
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                            "code": "NEG",
+                            "display": "Negative"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "fullUrl": "https://example.com/base/Observation/hbsag",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "hbsag",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "5195-03-01T00:00:00.000Z",
+                            "display": "HBsAg"
+                        }
+                    ],
+                    "text": "HBsAg"
+                },
+                "subject": {
+                    "display": "Esther Milani",
+                    "reference": "Patient/387353e4-691c-4024-804a-fe45d819d6b6"
+                },
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                            "code": "NEG",
+                            "display": "Negative"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

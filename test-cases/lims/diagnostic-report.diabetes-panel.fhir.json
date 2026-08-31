@@ -1,0 +1,203 @@
+{
+    "resourceType": "Bundle",
+    "id": "diabetes-panel",
+    "type": "collection",
+    "entry": [
+        {
+            "fullUrl": "https://example.com/base/DiagnosticReport/53edfe3f-3224-4f87-975c-febe576b09b5",
+            "resource": {
+                "resourceType": "DiagnosticReport",
+                "id": "53edfe3f-3224-4f87-975c-febe576b09b5",
+                "status": "final",
+                "basedOn": [
+                    {
+                        "reference": "ServiceRequest/126"
+                    }
+                ],
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                                "code": "MB",
+                                "display": "Bichemistry"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "102050-2",
+                            "display": "Diabetes Panel"
+                        }
+                    ],
+                    "text": "Diabetes Panel"
+                },
+                "subject": {
+                    "reference": "Patient/9132b2dd-233f-4008-b468-e78c3ad16a9e",
+                    "display": "Dennis Pollastri"
+                },
+                "issued": "2024-01-30T11:45:33+11:02",
+                "performer": [
+                    {
+                        "reference": "Pracitioner/079c18ed-1473-447d-a5d3-2e5caea80dfc",
+                        "display": "Doctor Chu Chen Lun"
+                    }
+                ],
+                "result": [
+                    {
+                        "id": "glucose",
+                        "reference": "Observation/glucose"
+                    },
+                    {
+                        "id": "hba1c",
+                        "reference": "Observation/hba1c"
+                    },
+                    {
+                        "id": "uric-acid",
+                        "reference": "Observation/uric-acid"
+                    }
+                ],
+                "conclusion": "Patient has diabetes",
+                "presentedForm": [
+                    {
+                        "data": "JVBERi0xLjQKMSAwIG9iago8PAovVGl0bGUgKP7/AFUAYgBlAHIpCi9DcmVhdG9yICj+/wB3AGsAaAB0AG0AbAB0AG8AcABkAGYAIAAwAC4AMQAyAC4ANikKL1Byb2R1Y2VyICj+/wBRAHQAIAA0AC4AOAAuADcpCi9DcmVhdGlvbkRhdGUgKEQ6MjAyNDAxMjkxODM0NDlaKQo+PgplbmRvYmoKMyAwIG9iago8PAovVHlwZSAvRXh0R1N0YXRlCi9TQSB0cnVlCi9TTSAwLjAyCi9jYSAxLjAKL0NBIDEuMAovQUlTIGZhbHNlCi9TTWFzayAvTm9uZT4+CmVuZG9iago0IDAgb2JqClsvUGF0dGVybiAvRGV2aWNlUkdCXQplbmRvYmoKNiAwIG9iago8PAovVHlwZSAvWE9iamVjdAovU3VidHlwZSAvSW1hZ2UKL1dpZHRoIDcyCi9IZWlnaHQgNzIKL0JpdHNQZXJDb21wb25lbnQgOAovQ29sb3JTcGFjZSAvRGV2aWNlR3JheQovTGVuZ3RoIDcgMCBSCi9GaWx0ZXIgL0ZsYXRlRGVjb2RlCj4+CnN0cmVhbQp4nO3MsQ0AMAgDsPx/NGVFYqzY7AOcAIfeN4/H4/F4PB6Px+PxTLUEuNQFU1RDCmVuZHN0cmVhbQplbmRvYmoKNyAwIG9iago0NgplbmRvYmoKOCAwIG9iago8PAovVHlwZSAvWE9iamVjdAovU3VidHlwZSAvSW1hZ2UKL1dpZHRoIDcyCi9IZWlnaHQgNzIKL0JpdHNQZXJDb21wb25lbnQgOAovQ29sb3JTcGFjZSAvRGV2aWNlUkdCCi9TTWFzayA2IDAgUgovTGVuZ3RoIDkgMCBSCi9GaWx0ZXIgL0ZsYXRlRGVjb2RlCj4+CnN0cmVhbQp4nO3Z30tTYRgH8JVmpUuG/RpOmaTDaOBcJJ",
+                        "title": "Full report attached",
+                        "contentType": "application/pdf"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "https://example.com/base/Observation/glucose",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "glucose",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2345-07-01T00:00:00.000Z",
+                            "display": "Glucose"
+                        }
+                    ],
+                    "text": "Glucose"
+                },
+                "subject": {
+                    "display": "Dennis Pollastri",
+                    "reference": "Patient/9132b2dd-233f-4008-b468-e78c3ad16a9e"
+                },
+                "valueQuantity": {
+                    "value": 150,
+                    "unit": "mg/dL"
+                },
+                "referenceRange": [
+                    {
+                        "low": {
+                            "value": 70,
+                            "unit": "mg/dL"
+                        },
+                        "high": {
+                            "value": 100,
+                            "unit": "mg/dL"
+                        }
+                    }
+                ],
+                "note": [
+                    {
+                        "text": "Far exceeding limit"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "https://example.com/base/Observation/hba1c",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "hba1c",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "41995-2",
+                            "display": "HbA1c"
+                        }
+                    ],
+                    "text": "HbA1c"
+                },
+                "subject": {
+                    "display": "Dennis Pollastri",
+                    "reference": "Patient/9132b2dd-233f-4008-b468-e78c3ad16a9e"
+                },
+                "valueQuantity": {
+                    "value": 6.5,
+                    "unit": "%"
+                },
+                "referenceRange": [
+                    {
+                        "low": {
+                            "value": 3,
+                            "unit": "%"
+                        },
+                        "high": {
+                            "value": 6,
+                            "unit": "%"
+                        }
+                    }
+                ],
+                "note": [
+                    {
+                        "text": "Too high"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "https://example.com/base/Observation/uric-acid",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "uric-acid",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "3084-01-01T00:00:00.000Z",
+                            "display": "Uric Acid"
+                        }
+                    ],
+                    "text": "Uric Acid"
+                },
+                "subject": {
+                    "display": "Dennis Pollastri",
+                    "reference": "Patient/9132b2dd-233f-4008-b468-e78c3ad16a9e"
+                },
+                "valueQuantity": {
+                    "value": 9,
+                    "unit": "mg/dL"
+                },
+                "referenceRange": [
+                    {
+                        "low": {
+                            "value": 3.5,
+                            "unit": "mg/dL"
+                        },
+                        "high": {
+                            "value": 7.2,
+                            "unit": "mg/dL"
+                        }
+                    }
+                ],
+                "note": [
+                    {
+                        "text": "Too high"
+                    }
+                ]
+            }
+        }
+    ]
+}

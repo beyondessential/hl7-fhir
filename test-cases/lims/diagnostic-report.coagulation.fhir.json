@@ -1,0 +1,203 @@
+{
+    "resourceType": "Bundle",
+    "id": "coagulation",
+    "type": "collection",
+    "entry": [
+        {
+            "fullUrl": "https://example.com/base/DiagnosticReport/9b3e1c8b-0adb-48c5-81e9-528b2ba40977",
+            "resource": {
+                "resourceType": "DiagnosticReport",
+                "id": "9b3e1c8b-0adb-48c5-81e9-528b2ba40977",
+                "status": "final",
+                "basedOn": [
+                    {
+                        "reference": "ServiceRequest/125"
+                    }
+                ],
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                                "code": "HM",
+                                "display": "Haematology"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "43153-6",
+                            "display": "coagulation"
+                        }
+                    ],
+                    "text": "coagulation"
+                },
+                "subject": {
+                    "reference": "Patient/d12a43e4-728a-4b52-bcf7-73daadc49ba2",
+                    "display": "Jack Bouma"
+                },
+                "issued": "2024-01-29T11:45:33+11:01",
+                "performer": [
+                    {
+                        "reference": "Pracitioner/ea000be5-dd26-4960-8453-7b31cb9d5bfa",
+                        "display": "Connie Olikong"
+                    }
+                ],
+                "result": [
+                    {
+                        "id": "prothrombin-time",
+                        "reference": "Observation/prothrombin-time"
+                    },
+                    {
+                        "id": "international-normalized-ratio",
+                        "reference": "Observation/international-normalized-ratio"
+                    },
+                    {
+                        "id": "activated-partial-thromboplastin-time",
+                        "reference": "Observation/activated-partial-thromboplastin-time"
+                    }
+                ],
+                "conclusion": "Patient is on Warfarin",
+                "presentedForm": [
+                    {
+                        "data": "JVBERi0xLjQKMSAwIG9iago8PAovVGl0bGUgKP7/AFUAYgBlAHIpCi9DcmVhdG9yICj+/wB3AGsAaAB0AG0AbAB0AG8AcABkAGYAIAAwAC4AMQAyAC4ANikKL1Byb2R1Y2VyICj+/wBRAHQAIAA0AC4AOAAuADcpCi9DcmVhdGlvbkRhdGUgKEQ6MjAyNDAxMjkxODM0NDlaKQo+PgplbmRvYmoKMyAwIG9iago8PAovVHlwZSAvRXh0R1N0YXRlCi9TQSB0cnVlCi9TTSAwLjAyCi9jYSAxLjAKL0NBIDEuMAovQUlTIGZhbHNlCi9TTWFzayAvTm9uZT4+CmVuZG9iago0IDAgb2JqClsvUGF0dGVybiAvRGV2aWNlUkdCXQplbmRvYmoKNiAwIG9iago8PAovVHlwZSAvWE9iamVjdAovU3VidHlwZSAvSW1hZ2UKL1dpZHRoIDcyCi9IZWlnaHQgNzIKL0JpdHNQZXJDb21wb25lbnQgOAovQ29sb3JTcGFjZSAvRGV2aWNlR3JheQovTGVuZ3RoIDcgMCBSCi9GaWx0ZXIgL0ZsYXRlRGVjb2RlCj4+CnN0cmVhbQp4nO3MsQ0AMAgDsPx/NGVFYqzY7AOcAIfeN4/H4/F4PB6Px+PxTLUEuNQFU1RDCmVuZHN0cmVhbQplbmRvYmoKNyAwIG9iago0NgplbmRvYmoKOCAwIG9iago8PAovVHlwZSAvWE9iamVjdAovU3VidHlwZSAvSW1hZ2UKL1dpZHRoIDcyCi9IZWlnaHQgNzIKL0JpdHNQZXJDb21wb25lbnQgOAovQ29sb3JTcGFjZSAvRGV2aWNlUkdCCi9TTWFzayA2IDAgUgovTGVuZ3RoIDkgMCBSCi9GaWx0ZXIgL0ZsYXRlRGVjb2RlCj4+CnN0cmVhbQp4nO3Z30tTYRgH8JVmpUuG/RpOmaTDaOBcJJ",
+                        "title": "Full report attached",
+                        "contentType": "application/pdf"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "https://example.com/base/Observation/prothrombin-time",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "prothrombin-time",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "42638-7",
+                            "display": "Prothrombin Time"
+                        }
+                    ],
+                    "text": "Prothrombin Time"
+                },
+                "subject": {
+                    "display": "Jack Bouma",
+                    "reference": "Patient/d12a43e4-728a-4b52-bcf7-73daadc49ba2"
+                },
+                "valueQuantity": {
+                    "value": 25,
+                    "unit": "Seconds"
+                },
+                "referenceRange": [
+                    {
+                        "low": {
+                            "value": 10,
+                            "unit": "Seconds"
+                        },
+                        "high": {
+                            "value": 13,
+                            "unit": "Seconds"
+                        }
+                    }
+                ],
+                "note": [
+                    {
+                        "text": "Far exceeding limit"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "https://example.com/base/Observation/international-normalized-ratio",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "international-normalized-ratio",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "34714-6",
+                            "display": "International Normalized Ratio"
+                        }
+                    ],
+                    "text": "International Normalized Ratio"
+                },
+                "subject": {
+                    "display": "Jack Bouma",
+                    "reference": "Patient/d12a43e4-728a-4b52-bcf7-73daadc49ba2"
+                },
+                "valueQuantity": {
+                    "value": 3,
+                    "unit": "no unit"
+                },
+                "referenceRange": [
+                    {
+                        "low": {
+                            "value": 1,
+                            "unit": "no unit"
+                        },
+                        "high": {
+                            "value": 1.4,
+                            "unit": "no unit"
+                        }
+                    }
+                ],
+                "note": [
+                    {
+                        "text": "Far exceeding limit"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "https://example.com/base/Observation/activated-partial-thromboplastin-time",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "activated-partial-thromboplastin-time",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "14979-9",
+                            "display": "Activated Partial Thromboplastin Time"
+                        }
+                    ],
+                    "text": "Activated Partial Thromboplastin Time"
+                },
+                "subject": {
+                    "display": "Jack Bouma",
+                    "reference": "Patient/d12a43e4-728a-4b52-bcf7-73daadc49ba2"
+                },
+                "valueQuantity": {
+                    "value": 30,
+                    "unit": "Seconds"
+                },
+                "referenceRange": [
+                    {
+                        "low": {
+                            "value": 25,
+                            "unit": "Seconds"
+                        },
+                        "high": {
+                            "value": 35,
+                            "unit": "Seconds"
+                        }
+                    }
+                ],
+                "note": [
+                    {
+                        "text": "Within limits"
+                    }
+                ]
+            }
+        }
+    ]
+}
